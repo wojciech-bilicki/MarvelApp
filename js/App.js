@@ -1,13 +1,11 @@
-var topBarTitle = function(props) {
-  return React.createElement('p', { style: props.style }, props.title);
-};
+import topBarTitle from './TopBarTitle';
 
-var topBar = function() {
+const topBar = function() {
   return React.createElement(
     'div',
     { style: { color: 'red' } },
     React.createElement(topBarTitle, {
-      title: 'SpiderMan Hero',
+      title: 'SpiderMan Herno',
       style: { color: 'blue' }
     }),
     React.createElement(topBarTitle, { title: 'IronMan Hero' }),
