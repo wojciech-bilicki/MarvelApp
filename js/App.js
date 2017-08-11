@@ -1,18 +1,18 @@
-import topBarTitle from './TopBarTitle';
+/* eslint-disable */
+import React from "react";
+import ReactDOM from "react-dom";
+import { Route, BrowserRouter, Switch } from "react-router-dom";
+import Master from "./Master";
+import Detail from "./Detail";
 
-const topBar = function() {
-  return React.createElement(
-    'div',
-    { style: { color: 'red' } },
-    React.createElement(topBarTitle, {
-      title: 'SpiderMan Herno',
-      style: { color: 'blue' }
-    }),
-    React.createElement(topBarTitle, { title: 'IronMan Hero' }),
-    React.createElement(topBarTitle, {
-      title: 'Hulk Hero',
-      style: { color: 'green' }
-    })
-  );
-};
-ReactDOM.render(React.createElement(topBar), document.getElementById('app'));
+const App = () =>
+  <BrowserRouter>
+    <div>
+      <Switch>
+        <Route path="/" component={Master} />
+        <Route path="/detail" component={Detail} />
+      </Switch>
+    </div>
+  </BrowserRouter>;
+
+ReactDOM.render(React.createElement(App), document.getElementById("app"));
