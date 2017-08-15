@@ -1,12 +1,32 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import TopBar from "./TopBar";
+import React from 'react';
 
-const Master = () =>
+import styled from 'styled-components';
+
+import HeroCard from './HeroCard';
+
+const CardListWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+`;
+
+const Master = props =>
   <div>
-    <TopBar />
-    <div>Content</div>
-    <Link to="/detail">Go to details</Link>
+    <CardListWrapper>
+      {props.heroes
+        .filter(hero => {
+          if (!props.searchTerm) {
+            return true;
+          }
+          return (
+            `${hero.name} ${hero.true_name}`
+              .toUpperCase()
+              .indexOf(props.searchTerm.toUpperCase()) >= 0
+          );
+        })
+        .map(hero =>
+          <HeroCard hero={hero} key={hero.id} label={Math.random()} />
+        )}
+    </CardListWrapper>
   </div>;
 
 export default Master;

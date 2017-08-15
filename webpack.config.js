@@ -2,11 +2,12 @@ const path = require('path');
 
 module.exports = {
   context: __dirname,
-  entry: './js/App.js',
+  entry: ['./js/App.js', 'webpack-dev-server/client?http://localhost:8080'],
   devtool: 'source-map',
   output: {
     path: path.join(__dirname, 'public'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    publicPath: '/public/'
   },
   resolve: {
     extensions: ['.js', '.jsx', '.json']
@@ -27,10 +28,15 @@ module.exports = {
       {
         test: /\.jsx?$/,
         loader: 'babel-loader'
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: 'file-loader'
       }
     ]
   },
   devServer: {
-    publicPath: '/public'
+    publicPath: '/public/',
+    historyApiFallback: true
   }
 };
