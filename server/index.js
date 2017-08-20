@@ -5,7 +5,8 @@ var http = require('http');
 var swaggerTools = require('swagger-tools');
 var jsyaml = require('js-yaml');
 var fs = require('fs');
-var serverPort = 8001;
+var serverPort = require('./config').port;
+var serveStatic = require('serve-static')
 
 // swaggerRouter configuration
 var options = {
@@ -22,6 +23,8 @@ var swaggerDoc = jsyaml.safeLoad(spec);
 swaggerTools.initializeMiddleware(swaggerDoc, function (middleware) {
   // Interpret Swagger resources and attach metadata to request - must be first in swagger-tools middleware chain
   app.use(middleware.swaggerMetadata());
+
+  app.use("/assets", serveStatic('assets'))
 
   // Validate Swagger requests
   app.use(middleware.swaggerValidator());
