@@ -1,24 +1,15 @@
 'use strict';
 const {getTable, getRecordBy, addRecord, removeRecordBy} = require("../db/db.js")
 var url = require('url');
-const port = require("../config.js").port
+
+
 var Heroes = require('./HeroesService');
 
-
-const makeHeroImagePath = imageName => `http://localhost:${port}/assets/portraits/${imageName}`
-const withImage = hero => Object.assign({}, hero, {image: makeHeroImagePath(hero.image)})
-const getHeroByFromDb = selector => {
-  const hero = getRecordBy("heroes",selector)
-
-  if(!hero) return hero
-
-  return withImage(hero)
-}
-const getHeroesFromDb = () => getTable('heroes').map(withImage)
+const getHeroBy = getRecordBy.bind(null, "heroes")
 
 module.exports.addFavourite = function addFavourite (req, res, next) {
   const heroId = req.swagger.params.heroId.value
-  const hero =  getHeroByFromDb(hero => hero.id === heroId)
+  const hero =  getHeroBy(hero => hero.id === heroId)
 
   if(!hero) {
     res.statusCode = 404
@@ -55,7 +46,7 @@ module.exports.deleteFavourite = function deleteFavourite (req, res, next) {
 
 module.exports.getFavourites = function getFavourites (req, res, next) {
   const favouritesIds = getTable('favourites')
-  const allHeros = getHeroesFromDb()
+  const allHeros = getTable('heroes')
 
   const favourites = allHeros.filter(hero => favouritesIds.includes(hero.id))
   res.setHeader('Content-Type', 'application/json')
@@ -66,7 +57,7 @@ module.exports.getFavourites = function getFavourites (req, res, next) {
 module.exports.getHeroById = function getHeroById (req, res, next) {
   const heroId = req.swagger.params.heroId.value
 
-  const hero =  getHeroByFromDb(hero => hero.id === heroId)
+  const hero =  getHeroBy(hero => hero.id === heroId)
 
   if(hero) {
     res.setHeader('Content-Type', 'application/json')
@@ -80,12 +71,9 @@ module.exports.getHeroById = function getHeroById (req, res, next) {
 };
 
 module.exports.getHeroes = function getHeroes (req, res, next) {
-  const heroes = getHeroesFromDb()
+  const heroes = getTable('heroes')
 
   res.setHeader('Content-Type', 'application/json')
   res.statusCode = 200
   res.end(JSON.stringify(heroes, null, 2));
 };
-
-module.exports.getHeroesFromDb = getHeroesFromDb
-module.exports.getHeroByFromDb = getHeroByFromDb

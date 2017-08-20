@@ -2,30 +2,17 @@
 
 var url = require('url');
 const {getTable, getRecordBy, addRecord, removeRecordBy} = require("../db/db.js")
-const {getHeroByFromDb} = require("./Heroes.js")
-const port = require("../config.js").port
 
 var Comics = require('./ComicsService');
-
-const makeCoverPath = imageName => `http://localhost:${port}/assets/comics/${imageName}`
-const withImage = comic => Object.assign({}, comic, {cover: makeCoverPath(comic.cover)})
-const getComicBy = selector => {
-  const comic = getRecordBy("comics",selector)
-
-  if(!comic) return comic
-
-  return withImage(comic)
-}
-const getComicsFromDb = () => getTable('comics').map(withImage)
 
 const comicWithCharacters = comic => Object.assign(
   {},
   comic,
-  {characters: comic.characters.map( id => getHeroByFromDb(hero => hero.id === id))}
+  {characters: comic.characters.map( id => getRecordBy('heroes', hero => hero.id === id))}
 )
 
 module.exports.getComics = function getComics (req, res, next) {
-  const comics = getComicsFromDb().map(comicWithCharacters)
+  const comics = getTable('comics').map(comicWithCharacters)
 
   res.setHeader('Content-Type', 'application/json')
   res.statusCode = 200
@@ -34,7 +21,7 @@ module.exports.getComics = function getComics (req, res, next) {
 
 module.exports.getComicsById = function getComicsById (req, res, next) {
   const comicId = req.swagger.params.comicId.value
-  const comic = getComicBy(comic => comic.id === comicId )
+  const comic = getRecordBy('comics', comic => comic.id === comicId )
 
   if(!comic) {
     res.statusCode = 404
