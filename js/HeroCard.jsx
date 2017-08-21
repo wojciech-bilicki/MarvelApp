@@ -1,6 +1,7 @@
+// @flow
 import React from 'react';
 import styled from 'styled-components';
-import { string, shape, number } from 'prop-types';
+import type { Hero } from './types';
 
 const HeroCardWrapper = styled.div`
   display: flex;
@@ -39,7 +40,7 @@ const HeroCardWrapper = styled.div`
   }
 `;
 
-const HeroCard = ({ hero, label }) =>
+const HeroCard = ({ hero }: { hero: Hero }) =>
   <HeroCardWrapper>
     <h4>
       {hero.name}
@@ -52,13 +53,3 @@ const HeroCard = ({ hero, label }) =>
   </HeroCardWrapper>;
 
 export default HeroCard;
-
-HeroCard.propTypes = {
-  hero: shape({
-    id: number.isRequired,
-    name: string.isRequired,
-    true_name: string.isRequired,
-    image: string.isRequired
-  }).isRequired,
-  label: string.isRequired
-};

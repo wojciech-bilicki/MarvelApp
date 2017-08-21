@@ -1,3 +1,4 @@
+// @flow
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
@@ -29,12 +30,16 @@ const SearchInput = styled.div`
   }
 `;
 
-class TopBar extends React.Component {
+type State = {
+  searchTerm: string
+};
+
+class TopBar extends React.Component<null, State> {
   state = {
     searchTerm: ''
   };
 
-  onInputChange = event => {
+  onInputChange = (event: KeyboardEvent & { target: HTMLInputElement }) => {
     this.setState({ searchTerm: event.target.value });
   };
 
@@ -42,11 +47,11 @@ class TopBar extends React.Component {
     return (
       <TopBarWrapper>
         <Logo src={`${logo}`} alt="Logo" />
-        <span>Super Hero Team</span>
+        <span>Super Marvel Teams</span>
         <SearchInput>
           <input value={this.state.searchTerm} onChange={this.onInputChange} />
           <Link to={`/search/${this.state.searchTerm}`}>
-            <button>search</button>
+            <button>search hero</button>
           </Link>
         </SearchInput>
       </TopBarWrapper>

@@ -1,6 +1,7 @@
+// @flow
 import React from 'react';
-
 import styled from 'styled-components';
+import type { Hero } from './types';
 
 import HeroCard from './HeroCard';
 
@@ -9,7 +10,12 @@ const CardListWrapper = styled.div`
   flex-wrap: wrap;
 `;
 
-const Master = props =>
+type Props = {
+  searchTerm: string,
+  heroes: Array<Hero>
+};
+
+const Master = (props: Props) =>
   <div>
     <CardListWrapper>
       {props.heroes
@@ -23,9 +29,7 @@ const Master = props =>
               .indexOf(props.searchTerm.toUpperCase()) >= 0
           );
         })
-        .map(hero =>
-          <HeroCard hero={hero} key={hero.id} label={Math.random()} />
-        )}
+        .map(hero => <HeroCard hero={hero} key={hero.id} />)}
     </CardListWrapper>
   </div>;
 

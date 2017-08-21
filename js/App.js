@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React from 'react';
-import ReactDOM from 'react-dom';
+
 import { Route, BrowserRouter, Switch } from 'react-router-dom';
 import styled from 'styled-components';
 import Master from './Master';
@@ -48,4 +48,4 @@ const App = () =>
     </div>
   </BrowserRouter>;
 
-ReactDOM.render(React.createElement(App), document.getElementById('app'));
+export default App;

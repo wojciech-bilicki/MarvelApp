@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TopBar should render properly 1`] = `
+<styled.header>
+  <styled.img
+    alt="Logo"
+    src="test-file-stub"
+  />
+  <span>
+    Super Marvel Teams
+  </span>
+  <styled.div>
+    <input
+      onChange={[Function]}
+      value=""
+    />
+    <Link
+      to="/search/"
+    >
+      <button>
+        search
+      </button>
+    </Link>
+  </styled.div>
+</styled.header>
+`;
