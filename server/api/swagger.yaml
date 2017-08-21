@@ -1,0 +1,214 @@
+---
+swagger: "2.0"
+info:
+  description: "Marvel Heroes API for OKE workshops\n"
+  version: "1.0.0"
+  title: "Marvel Heroes"
+host: "localhost:8001"
+basePath: "/api/v1"
+tags:
+- name: "heroes"
+  description: "Everything about your heroes"
+- name: "comics"
+  description: "Info about all comics"
+schemes:
+- "http"
+paths:
+  /heroes:
+    x-swagger-router-controller: "Heroes"
+    get:
+      tags:
+      - "heroes"
+      summary: "Get list of all heroes"
+      operationId: "getHeroes"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Hero"
+  /heroes/{heroId}:
+    x-swagger-router-controller: "Heroes"
+    get:
+      tags:
+      - "heroes"
+      summary: "Find hero by ID"
+      description: "Returns a single hero"
+      operationId: "getHeroById"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "heroId"
+        in: "path"
+        description: "ID of hero to return"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/Hero"
+        404:
+          description: "Invalid ID supplied"
+  /heroes/favourites:
+    x-swagger-router-controller: "Heroes"
+    get:
+      tags:
+      - "heroes"
+      summary: "Get your favourite heroes"
+      description: "Returns list of favourites heroes"
+      operationId: "getFavourites"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "successful operation"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Hero"
+    post:
+      tags:
+      - "heroes"
+      summary: "Add a hero to your favourites list"
+      description: "Adds a hero and returns it"
+      operationId: "addFavourite"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "heroId"
+        description: "Hero's ID"
+        required: true
+        schema:
+          type: "number"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/Hero"
+        409:
+          description: "hero already present in the list"
+        404:
+          description: "Hero with given ID not found"
+      x-swagger-router-controller: "Heroes"
+  /heroes/favourites/{heroId}:
+    x-swagger-router-controller: "Heroes"
+    delete:
+      tags:
+      - "heroes"
+      summary: "Delete a hero from you favourites"
+      description: "Removes a hero"
+      operationId: "deleteFavourite"
+      parameters:
+      - name: "heroId"
+        in: "path"
+        description: "ID of a hero to remove from favourites"
+        required: true
+        type: "integer"
+      responses:
+        204:
+          description: "succesful operation"
+        404:
+          description: "Hero with given ID not found"
+  /comics:
+    x-swagger-router-controller: "Comics"
+    get:
+      tags:
+      - "comics"
+      summary: "Returns a list of all comics"
+      operationId: "getComics"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Comic"
+  /comics/{comicId}:
+    x-swagger-router-controller: "Comics"
+    get:
+      tags:
+      - "comics"
+      summary: "Returns a list of all comics"
+      operationId: "getComicsById"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "comicId"
+        in: "path"
+        description: "ID of a comic to return"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/Comic"
+        404:
+          description: Comic with given ID not found
+definitions:
+  Hero:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        example: 1
+      name:
+        type: "string"
+        example: "Black Widow"
+      true_name:
+        type: "string"
+        example: "Natalia 'Natasha' Alianovna Romanova"
+      powers:
+        type: "array"
+        example:
+        - "slowed aging"
+        - "enahnced immune system"
+        - "martail arts"
+        - "pistols"
+        items:
+          type: "string"
+      place_of_birth:
+        type: "string"
+        example: "Stalingrad, U.S.S.R"
+      citizenship:
+        type: "string"
+        example: "Former U.S.S.R, U.S.A"
+      image:
+        type: "string"
+        example: "black_widow.jpg"
+      description:
+        type: "string"
+        example: "There are varying accounts of Romanova's early life."
+  Comic:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        example: 0
+      title:
+        type: "string"
+        example: "The Call of the Mountain Thing!"
+      characters:
+        type: "array"
+        items:
+          $ref: "#/definitions/Hero"
+      editor:
+        type: "string"
+      cover:
+        type: "string"
+      description:
+        type: "string"
