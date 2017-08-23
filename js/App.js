@@ -8,8 +8,6 @@ import Detail from './Detail';
 import TopBar from './TopBar';
 import background from '../assets/background.png';
 
-import data from '../data.json';
-
 const Background = styled.img`
   min-height: 100%;
   min-width: 1024px;
@@ -29,19 +27,12 @@ const App = () =>
       <TopBar />
       <Background src={background} />
       <Switch>
-        <Route
-          exact
-          path="/"
-          component={props => <Master heroes={data.heroes} />}
-        />
+        <Route exact path="/" component={props => <Master />} />
         <Route
           exact
           path="/search/:searchTerm?"
           component={props =>
-            <Master
-              heroes={data.heroes}
-              searchTerm={props.match.params.searchTerm}
-            />}
+            <Master searchTerm={props.match.params.searchTerm} />}
         />
         <Route path="/detail" component={Detail} />
       </Switch>
