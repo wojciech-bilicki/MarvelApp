@@ -1,8 +1,10 @@
 // @flow
 import React from 'react';
+import { connect } from 'react-redux';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import logo from '../assets/Marvel-Logo.png';
+import { setSearchTerm } from './redux/actionCreators';
 
 const TopBarWrapper = styled.header`
   width: 100%;
@@ -30,33 +32,34 @@ const SearchInput = styled.div`
   }
 `;
 
-type State = {
-  searchTerm: string
-};
+const TopBar = ({
+  searchTerm,
+  handleInputChange
+}: {
+  searchTerm: string,
+  handleInputChange: Function
+}) =>
+  <TopBarWrapper>
+    <Link to="/">
+      <Logo src={`${logo}`} alt="Logo" />
+    </Link>
+    <span>Super Marvel Teams</span>
+    <SearchInput>
+      <input value={searchTerm} onChange={handleInputChange} />
+      <Link to={`/search/${searchTerm}`}>
+        <button>search hero</button>
+      </Link>
+    </SearchInput>
+  </TopBarWrapper>;
 
-class TopBar extends React.Component<null, State> {
-  state = {
-    searchTerm: ''
-  };
+const mapStateToProps = state => ({
+  searchTerm: state.searchTerm
+});
 
-  onInputChange = (event: KeyboardEvent & { target: HTMLInputElement }) => {
-    this.setState({ searchTerm: event.target.value });
-  };
-
-  render() {
-    return (
-      <TopBarWrapper>
-        <Logo src={`${logo}`} alt="Logo" />
-        <span>Super Marvel Teams</span>
-        <SearchInput>
-          <input value={this.state.searchTerm} onChange={this.onInputChange} />
-          <Link to={`/search/${this.state.searchTerm}`}>
-            <button>search hero</button>
-          </Link>
-        </SearchInput>
-      </TopBarWrapper>
-    );
+const mapDispatchToProps = dispatch => ({
+  handleInputChange: event => {
+    dispatch(setSearchTerm(event.target.value));
   }
-}
+});
 
-export default TopBar;
+export default connect(mapStateToProps, mapDispatchToProps)(TopBar);

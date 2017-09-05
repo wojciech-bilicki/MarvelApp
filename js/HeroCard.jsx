@@ -1,6 +1,7 @@
 // @flow
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import type { Hero } from './types';
 
 const HeroCardWrapper = styled.div`
@@ -26,6 +27,7 @@ const HeroCardWrapper = styled.div`
   h5,
   h4 {
     padding: 8px 0;
+    text-align: center;
     word-wrap: break-word;
   }
 
@@ -38,18 +40,34 @@ const HeroCardWrapper = styled.div`
     border: none;
     margin-bottom: 8px;
   }
+
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
-const HeroCard = ({ hero }: { hero: Hero }) =>
+const HeroCard = ({
+  hero,
+  onAddToFavouritesRequested
+}: {
+  hero: Hero,
+  onAddToFavouritesRequested: number => void
+}) =>
   <HeroCardWrapper>
-    <h4>
-      {hero.name}
-    </h4>
-    <img src={`../assets/portraits/${hero.image}`} alt="Hero Portrait" />
-    <h5>
-      {hero.true_name}
-    </h5>
-    <button>Add to my heroes</button>
+    <Link to={`/detail/${hero.id}`}>
+      <h4>
+        {hero.name}
+      </h4>
+      <img src={hero.image} alt="Hero Portrait" />
+      <h5>
+        {hero.true_name}
+      </h5>
+    </Link>
+    <button onClick={() => onAddToFavouritesRequested(hero.id)}>
+      Add to my heroes
+    </button>
   </HeroCardWrapper>;
 
 export default HeroCard;

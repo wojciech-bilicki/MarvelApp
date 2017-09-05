@@ -13,8 +13,4 @@ describe('Master component', () => {
   it('renders properly', () => {
     expect(master).toMatchSnapshot();
   });
-
-  it('renders HeroCard amount based on props', () => {
-    expect(master.find(HeroCard).length).toEqual(data.heroes.length);
-  });
 });

@@ -2,10 +2,14 @@
 
 exports[`TopBar should render properly 1`] = `
 <styled.header>
-  <styled.img
-    alt="Logo"
-    src="test-file-stub"
-  />
+  <Link
+    to="/"
+  >
+    <styled.img
+      alt="Logo"
+      src="test-file-stub"
+    />
+  </Link>
   <span>
     Super Marvel Teams
   </span>
@@ -18,7 +22,7 @@ exports[`TopBar should render properly 1`] = `
       to="/search/"
     >
       <button>
-        search
+        search hero
       </button>
     </Link>
   </styled.div>

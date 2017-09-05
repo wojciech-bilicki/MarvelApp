@@ -15,7 +15,13 @@
       "place_of_birth": "Unknown",
       "citizenship": "Hell",
       "image": "mephisto.jpg",
-      "description": "Mephisto is an extra-dimensional demon whose origin is unknown. He rules a fiery pocket dimension that he calls \"Hell\" or \"Hades\" although it is neither the hell of the Christian religion nor the Hades ruled by Pluto, the Olympian god of the dead. Mephisto calls his extra-dimensional realm \"hell\" in order to exploit Earth human beings' belief in a single being of absolute evil, who is often referred to as Satan, who rules such a realm."
+      "description": "Mephisto is an extra-dimensional demon whose origin is unknown. He rules a fiery pocket dimension that he calls \"Hell\" or \"Hades\" although it is neither the hell of the Christian religion nor the Hades ruled by Pluto, the Olympian god of the dead. Mephisto calls his extra-dimensional realm \"hell\" in order to exploit Earth human beings' belief in a single being of absolute evil, who is often referred to as Satan, who rules such a realm.",
+      "comics": [
+        5,
+        9,
+        20,
+        26
+      ]
     },
     {
       "id": 1,
@@ -30,7 +36,16 @@
       "place_of_birth": "Stalingrad, U.S.S.R",
       "citizenship": "Former U.S.S.R, U.S.A",
       "image": "black_widow.jpg",
-      "comics": [],
+      "comics": [
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        18,
+        26
+      ],
       "description": "There are varying accounts of Romanova's early life. One account states that in 1928, Nazis set the building in Stalingrad that Natasha and her mother were living in on fire. Her mother threw her out the window to a Russian soldier before dying in the fire.[6][8] The soldier's name was Ivan Petrovitch, and he watched over Natasha for her entire life, remaining by her side as her \"foster father\"."
     },
     {
@@ -45,7 +60,26 @@
       "place_of_birth": "New York, U.S.A",
       "citizenship": "U.S.A",
       "image": "captain_america.jpg",
-      "comics": [],
+      "comics": [
+        0,
+        1,
+        5,
+        6,
+        7,
+        8,
+        11,
+        13,
+        17,
+        18,
+        21,
+        22,
+        23,
+        25,
+        26,
+        29,
+        30,
+        31
+      ],
       "description": "During the dark days of the early 1940's, a covert US military experiment turned Steve Rogers into America's first Super-Soldier, Captain America. Throughout the war, Cap and his partner Bucky Barnes fought alongside infantry and with a group of heroes known as the Invaders. In the closing months of World War II, Captain America and Bucky were both presumed dead in an explosion. Few decades later, Captain America was found trapped in ice and revived in the modern world."
     },
     {
@@ -61,7 +95,18 @@
       "place_of_birth": "Haasenstadt, Latveria",
       "citizenship": "Latveria",
       "image": "doctor_doom.jpg",
-      "comics": [],
+      "comics": [
+        9,
+        10,
+        11,
+        16,
+        20,
+        21,
+        25,
+        26,
+        30,
+        31
+      ],
       "description": "The Latverian Monarch known to many as Doctor Doom was born a brilliant person named Victor von Doom. In a deal with the devil, his mother sacrificed her soul in return for her son to be a ruler. He spent much of his life studying both dark magic and science, only to have his plans continually foiled by meddling superheroes. As monarch of Latveria, Doom's rule is dealt with a heavy hand. Between his time platform (the first known time machine on Earth) and his doombots (robotic replicas of himself with artificial intelligence), Doom is a brilliant inventor and scientist. While at the same time, he is one of the most powerful sorcerers in existence, making him easily amongst the most dangerous villains on Earth."
     },
     {
@@ -78,7 +123,18 @@
       "place_of_birth": "Dayton, Ohio",
       "citizenship": "U.S.A",
       "image": "hulk.jpg",
-      "comics": [],
+      "comics": [
+        7,
+        11,
+        12,
+        13,
+        14,
+        18,
+        25,
+        26,
+        28,
+        37
+      ],
       "description": "Bruce Banner was a scientist who was working on a gamma bomb when he noticed teenager Rick Jones out on the test range. Although he rushed out into the test site and heroically pushed the boy into the protective trench to save him from the blast, Bruce was exposed to extreme amounts of gamma radiation that altered his DNA structure due to gamma rays and trauma passed down by his Father and caused him to become a giant green (at first grey) monster of incredible power whenever he starts to get angry."
     },
     {
@@ -95,7 +151,26 @@
       "place_of_birth": "Long Island, New York",
       "citizenship": "U.S.A",
       "image": "iron_man.jpg",
-      "comics": [],
+      "comics": [
+        1,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        25,
+        26,
+        27,
+        29,
+        30
+      ],
       "description": "Iron Man is one of the most widely known superheroes in the world. Anthony Edward \"Tony\" Stark was born with extreme intelligence. After the death of his parents when he was 21, Stark inherited Stark Enterprises. After being wounded while in a war zone, he built an armored suit that would help to keep him alive. Stark helped to organize the superhero team, The Avengers early in his career as a superhero. Originally, Tony Stark had no powers of his own, and he depended on his armored suit for all of his superhuman abilities, until he injected himself with the Extremis virus and later had an R.T. node implanted in his chest, gaining new abilities and intellect. Iron Man was created by Stan Lee, Larry Lieber, Don Heck and Jack Kirby, first appearing in Tales of Suspense #39."
     },
     {
@@ -111,7 +186,17 @@
       "place_of_birth": "Waverly, Iowa",
       "citizenship": "U.S.A. with a criminal record, pardoned",
       "image": "hawkeye.jpg",
-      "comics": [],
+      "comics": [
+        1,
+        4,
+        5,
+        7,
+        17,
+        18,
+        29,
+        31,
+        36
+      ],
       "description": "Clinton Barton was a former circus worker and criminal-turned-hero, who received his archery skills as a young boy through training with Swordsman and Trickshot. Barton would eventually join both the East Coast and West Coast branches of The Avengers, even leading at one time. Hawkeye was created by Stan Lee and Don Heck, first appearing in Tales of Suspense #57. (1964)"
     },
     {
@@ -131,7 +216,14 @@
       "place_of_birth": "Jotunheim, Asgard",
       "citizenship": "Realm of Asgard",
       "image": "loki.jpg",
-      "comics": [],
+      "comics": [
+        10,
+        11,
+        14,
+        19,
+        20,
+        34
+      ],
       "description": "Loki Laufeyson is the son of Queen Farbauti and King Laufey, leader of the Giants of Jotunheim. He was born small and was an embarrassment to his parents, and was segregated from other Giants."
     },
     {
@@ -148,7 +240,11 @@
       "place_of_birth": "unidentified village in Germany",
       "citizenship": "Germany",
       "image": "red_skull.jpg",
-      "comics": [],
+      "comics": [
+        21,
+        22,
+        23
+      ],
       "description": "Johann Shmidt, the Red Skull, was the son of a coarse, drunken German villager named Hermann Shmidt and his reportedly saintly, long-suffering wife Martha, who for years endured abuse and beatings from her husband. Martha died giving birth to Johann, their only child. Driven to madness by the death of the woman he both loved and hated, Hermann Shmidt tried to drown the newborn infant, accusing him of murdering Martha. The doctor who had just delivered the baby saved Johann from his abused father, and the next morning Hermann Shmidt committed suicide."
     },
     {
@@ -165,7 +261,11 @@
       "place_of_birth": "Eternal colony, Titan",
       "citizenship": "Titan",
       "image": "thanos.jpg",
-      "comics": [],
+      "comics": [
+        24,
+        25,
+        26
+      ],
       "description": "Thanos was one of the last sons of A'Lars, progenitor of the second colony of Eternals on Titan, and Sui-San, the last survivor of the original settlement of Eternals on Titan. Born with grey, hide-like skin and a massive body due to being born with the Deviant Syndrome, Thanos was a morose child who became obsessed with the concept of death. Through bionic implementation and long hours of meditation, Thanos augmented his Eternal strengths and powers so that his abilities surpassed those of all other Titanian Eternals."
     },
     {
@@ -182,7 +282,19 @@
       "place_of_birth": "Forest Hills, New York",
       "citizenship": "U.S.A.",
       "image": "spiderman.jpg",
-      "comics": [],
+      "comics": [
+        2,
+        8,
+        10,
+        11,
+        18,
+        27,
+        28,
+        29,
+        32,
+        34,
+        37
+      ],
       "description": "Peter Parker was bitten by a radioactive spider while in high school, the spider bite caused him to develop powers and abilities similar to that of a spider. He was soon able to crawl up walls and sense imminent danger, and eventually even developed his own method of creating webs to swing from. Upon the death of his Uncle Ben due to Peter's indifference, Peter decided that 'With Great Power there must also come Great Responsibility', and thus became Spider-Man."
     },
     {
@@ -199,7 +311,13 @@
       "place_of_birth": "Created in Cresskill, New Jersey",
       "citizenship": "Inapplicable",
       "image": "ultron.jpg",
-      "comics": [],
+      "comics": [
+        21,
+        26,
+        30,
+        31,
+        32
+      ],
       "description": "Ultron-1 was constructed by Dr. Hank Pym of the Avengers as the famed scientist/adventurer was experimenting in high-intelligence robotics. Ultron became sentient and rebelled, hypnotizing and brainwashing Pym into forgetting that Ultron had ever existed. He immediately began improving upon his rudimentary design, quickly upgrading himself several times to become Ultron-5. He then went on to organize the second incarnation of the Masters of Evil under the guise of the Crimson Cowl, and battled the Avengers."
     },
     {
@@ -216,7 +334,21 @@
       "place_of_birth": "Cave in Norway",
       "citizenship": "Asgard, honorary US citizen",
       "image": "thor.jpg",
-      "comics": [],
+      "comics": [
+        5,
+        8,
+        10,
+        13,
+        14,
+        18,
+        19,
+        25,
+        26,
+        28,
+        31,
+        32,
+        34
+      ],
       "description": "Leaping from the legends of Norse mythology, the Asgardian God of Thunder, Thor, is the son of Odin the All-Father and Jord, Elder Goddess and spirit of the Earth. He frequently stands alongside the Avengers in the defense of the people of Midgard (Earth), often against the schemes of his adopted brother Loki. He formerly dwelt in a recreation of Asgard in Oklahoma, using the mortal form of Donald Blake to provide a bridge between his people and the mortals surrounding them. However, Loki's subtle trickery and manipulations of Balder, combined with her time-twisting of Asgard's past and that of Bor and Odin's has enabled her to banish Thor from Asgard, stripping him of his titles, throne and legal power, and move his people to Doctor Doom's Latveria, having planned this ever since her rebirth. Thor returned to Asgard, just in time to aid them in a battle against Norman Osborn's Dark Avengers, X-Men, and H.A.M.M.E.R. forces, killing Sentry after he destroyed Asgard. Feeling lonely, Thor has resurrected his brother Loki and father Odin and they continue to battle-on for the survival of Asgard."
     },
     {
@@ -233,7 +365,15 @@
       "place_of_birth": "Philadelphia, Pennsylvania",
       "citizenship": "U.S.A.",
       "image": "doctor_strange.jpg",
-      "comics": [],
+      "comics": [
+        7,
+        16,
+        18,
+        25,
+        26,
+        37,
+        38
+      ],
       "description": "As Master of the Mystic Arts and Sorcerer Supreme, Doctor Strange is typically the world's foremost expert on magic, but it wasn't always that way. Earlier in his life, he was an arrogant professional surgeon, but when a car accident took his fine motor skills away from him, he became desperate and searched the globe for a cure. One was offered, not to cure his hands, but instead to cure his soul."
     },
     {
@@ -249,7 +389,16 @@
       "place_of_birth": "New York, U.S.A",
       "citizenship": "U.S.A",
       "image": "daredevil.jpg",
-      "comics": []
+      "comics": [
+        2,
+        3,
+        4,
+        6,
+        11,
+        14,
+        18,
+        26
+      ]
     },
     {
       "id": 15,
@@ -264,7 +413,13 @@
       "place_of_birth": "Wundagore Mountain, Transia",
       "citizenship": "Transia",
       "image": "scarlet_witch.jpg",
-      "comics": []
+      "comics": [
+        6,
+        17,
+        18,
+        25,
+        31
+      ]
     }
   ],
   "comics": [
@@ -393,7 +548,7 @@
       ],
       "editor": "Axel Alonso",
       "description": "Several years into the past, Doctor Doom and the Cabal were about to start a meeting. While the rest of the members waited for Norman Osborn, the Hood inquired Doom about the veracity of a story he had read, which documented how Doom had rescued his mother's soul from a demon. Doom's confirmation of these events as he orders the Hood to silence prompt the small-time villain to question what motivated Doom, considering his amount of power, prowess, and fortune. The Hood's insolence prompted Doom to blast him with a spell that banish him to India.",
-      "cover": "infamous_iron_man"
+      "cover": "infamous_iron_man.jpg"
     },
     {
       "id": 10,
@@ -622,7 +777,7 @@
       "description": ""
     },
     {
-      "id": 26,
+      "id": 27,
       "title": "Spider-Man",
       "characters": [
         10
@@ -632,7 +787,7 @@
       "description": "With the Parker household desperate for money following the death of Ben Parker, Peter Parker decides to continue in show business as Spider-Man. However, not only does he find it impossible to cash his paycheck (made out to Spider-Man), but the irrational editorials by J. Jonah Jameson in the Daily Bugle effectively quelch his career. Besides denouncing Spider-Man as a publicity-seeking phony, J. Jonah Jameson also publishes articles lauding his son, John Jameson, a courageous astronaut about to be launched into orbit in a space capsule. J. Jonah Jameson calls his son a \"real hero.\""
     },
     {
-      "id": 27,
+      "id": 28,
       "title": "The Extremist: Part 1",
       "characters": [
         5,
@@ -644,7 +799,7 @@
       "description": "IN TIME FOR HEROIC AGE…A BOLD NEW ERA IN WEB OF SPIDER-MAN! With an Age of Heroes unfolding around him, Superhero-Critic-in-Chief, Mayor J. Jonah Jameson, finds himself the target of a vicious assassination plot courtesy of a pro-super human vigilante in THE EXTREMIST – PART 1!"
     },
     {
-      "id": 28,
+      "id": 29,
       "title": "Denial",
       "characters": [
         4,
@@ -655,7 +810,7 @@
       "description": ""
     },
     {
-      "id": 29,
+      "id": 30,
       "title": "Age of Ultron: Book One",
       "characters": [
         2,
@@ -668,7 +823,7 @@
       "description": "The story opens with the city of New York, which looks completely obliterated, ravaged, destroyed, and above it all it floats a gigantic technological fortress. Hiding inside the alleys of the ruined city, Avengers member Hawkeye assaults a group of Mutant Growth Hormone dealers, killing them with his arrows. Clint discovers that the group is led by the Owl and Hammerhead, who are also holding a hostage. Owl and Hammerhead head out to confront Hawkeye, who keeps his raid going forward, eliminating the members until he reaches the basement where the hostage is held and is revealed to be Spider-Man."
     },
     {
-      "id": 30,
+      "id": 31,
       "title": "Heroes assembled",
       "characters": [
         2,
@@ -683,7 +838,7 @@
       "description": ""
     },
     {
-      "id": 31,
+      "id": 32,
       "title": "Rage of Ultron",
       "characters": [
         2,
@@ -698,7 +853,7 @@
       "description": "A nihilist narration tells us Ultron's perspective: The humans dismiss logic and bend to imaginary Gods, depend on the achievements of the 0.1 percent of them that have given them everything, which they use to constantly slaughter each other for trivialities. They are hopeless, an infection that awaits to be cured by his rage. In New York City, years ago, a crowd runs in fear as the city is under attack. Captain America, running in the opposite direction of the crowd, spots a woman with a broken ankle tripping and goes to help her. Ultron emerges from the ground, but Cap manages to save the woman from debris. Two men help the woman get await while Cap protects them from Ultron. The automaton says the Captain can only give them false hope and continues to attack, but Beast and Hawkeye arrive. Beast punches Ultron and playfully dodge his attacks while Caps cuts is head off with his shield and Hawkeye throws an explosive arrow inside him. Beast says that was only one of Ultron's copies, while Hawkeye tries to get the crowd to move. They don't listen until Cap tells them to get off the island."
     },
     {
-      "id": 32,
+      "id": 33,
       "title": "Thor the Mighty and the Stone Men from Saturn!",
       "characters": [
         12
@@ -708,7 +863,7 @@
       "description": "Donald Blake, a doctor from the United States, is visiting Norway. At the same time, a ship from Saturn lands nearby as advance scouts for a planned invasion. A local fisherman spots them and alerts the villagers, but they dismiss him. Blake overhears and goes to look for himself. When he steps on a twig, the aliens notice him. He flees into the hills, where he loses his cane. He runs into a cave, but the other entrance is blocked by a giant boulder. A secret door opens, revealing a chamber where Blake finds a walking stick. He tries to move the boulder with the stick but is unable to get leverage. Frustrated, he hits the boulder with the stick, and, in a flash of light, the stick transforms into a hammer, transforming Blake into Thor, the mythical Norse God of Thunder."
     },
     {
-      "id": 33,
+      "id": 34,
       "title": "And the Home of the Brave",
       "characters": [
         10,
@@ -719,7 +874,7 @@
       "description": "Thor tries to transport himself to Asgard, but as soon as he begins to materialize, he is instantly thrown back to Earth. While inside Asgard, Adva has secured a barrier so that none may enter. The Dark Gods want sport, they want to see a glorious battle, so they bring out Balder, who has already been badly beaten. Perrikus refuses to battle someone who is so little challenge, so Tokkots wants to be the one to dispatch him. Zelia bats him away easily, declaring that this is to be Perrikus' kill. Balder grabs a sword and lunges at Perrikus, but Perrikus easily knocks him away and slices him open."
     },
     {
-      "id": 34,
+      "id": 35,
       "title": "The Galactus Seed, Part 4: To Duel Against Galactus",
       "characters": [
         7,
@@ -730,7 +885,7 @@
       "description": "ASGARD RISES AGAINST GALACTUS! The World Eater has come for something buried deep within the heart of Fallen Asgard. As Odin leads an assault wave of gods against Galactus, a wounded Thor must contend with the Silver Surfer once more! All of which leaves Volstagg and Kid Loki in charge of the Shining City for an afternoon. What could possibly go wrong? "
     },
     {
-      "id": 35,
+      "id": 36,
       "title": "The Coming of Dr. Strange",
       "characters": [
         13
@@ -740,7 +895,7 @@
       "description": "While recuperating at the Sanctum of his master the Ancient One, Dr. Strange sleeps and dreams of the events that led to him becoming a master of the mystic arts. What follows is an extended origin based on the events depicted in Strange Tales #115 following the end of his career as a surgeon due to car accident, becoming a drunken derelict and questing to restore his damaged hands. Learning of the Ancient One and attempting to become his disciple, after displaying a show of selflessness by trying to protect the Ancient One from the machinations of Karl Mordo, he is allowed to train under the Ancient One's tutelage. Strange awakens from his dream to the summons of the Ancient One."
     },
     {
-      "id": 36,
+      "id": 37,
       "title": "Strange Encounters",
       "characters": [
         6,
@@ -752,7 +907,7 @@
       "description": ""
     },
     {
-      "id": 37,
+      "id": 38,
       "title": "Hot Spell",
       "characters": [
         4,
@@ -763,5 +918,12 @@
       "description": "Rintrah studies up on his master's greatest foes."
     }
   ],
-  "favourites": []
+  "favourites": [
+    10,
+    15,
+    8,
+    12,
+    14,
+    3
+  ]
 }
