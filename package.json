@@ -1,0 +1,16 @@
+{
+  "name": "MarvelApp",
+  "version": "1.0.0",
+  "description": "Marvel Hero App",
+  "main": "index.js",
+  "author": "Wojtek Bilicki",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^4.7.1",
+    "prettier": "^1.7.0"
+  },
+  "scripts": {
+    "prettify": "prettier --write --single-quote --print-width=90 *.js",
+    "lint": "eslint *.js"
+  }
+}
