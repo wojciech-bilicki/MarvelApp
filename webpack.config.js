@@ -8,6 +8,9 @@ module.exports = {
     path: path.join(__dirname, "public"),
     filename: "bundle.js"
   },
+  devServer: {
+    publicPath: path.join(__dirname, "public")
+  },
   resolve: {
     extensions: [".js", ".jsx", ".json"]
   },
@@ -19,8 +22,18 @@ module.exports = {
   module: {
     rules: [
       {
+        enforce: "pre",
+        test: /\.jsx?$/,
+        loader: "eslint-loader",
+        exclude: /node_modules/
+      },
+      {
         test: /\.jsx?$/,
         loader: "babel-loader"
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        loader: ["file-loader"]
       }
     ]
   }
