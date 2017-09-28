@@ -29119,21 +29119,32 @@ module.exports = function hoistNonReactStatics(targetComponent, sourceComponent,
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_router_dom__ = __webpack_require__(95);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__TopBar__ = __webpack_require__(233);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_styled_components__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__TopBar__ = __webpack_require__(233);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__assets_background_png__ = __webpack_require__(245);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__assets_background_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__assets_background_png__);
+var _templateObject = _taggedTemplateLiteralLoose(["\n  min-height: 100%;\n  min-width: 1024px;\n\n  width: 100%;\n  height: auto;\n\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: -1;\n  opacity: 0.5;\n"], ["\n  min-height: 100%;\n  min-width: 1024px;\n\n  width: 100%;\n  height: auto;\n\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: -1;\n  opacity: 0.5;\n"]);
+
+function _taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
 
 
 
+
+
+
+
+
+
+var url = "public/" + __WEBPACK_IMPORTED_MODULE_4__assets_background_png___default.a;
+
+var Background = __WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */].img(_templateObject);
 
 var Master = function Master() {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     "div",
     null,
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__TopBar__["a" /* default */], null),
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      "div",
-      null,
-      "Content"
-    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__TopBar__["a" /* default */], null),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Background, { src: url }),
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Link */],
       { to: "/detail" },
@@ -29151,24 +29162,44 @@ var Master = function Master() {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__styled__ = __webpack_require__(234);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__assets_Marvel_Logo_png__ = __webpack_require__(243);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__assets_Marvel_Logo_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__assets_Marvel_Logo_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_styled_components__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__styled__ = __webpack_require__(234);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__assets_Marvel_Logo_png__ = __webpack_require__(243);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__assets_Marvel_Logo_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__assets_Marvel_Logo_png__);
+var _templateObject = _taggedTemplateLiteralLoose(["\n  width: 200px;\n  height: 80px;\n  margin-left: 32px;\n"], ["\n  width: 200px;\n  height: 80px;\n  margin-left: 32px;\n"]),
+    _templateObject2 = _taggedTemplateLiteralLoose(["\n  margin-right: 32px;\n  input {\n    margin-right: 8px;\n  }\n"], ["\n  margin-right: 32px;\n  input {\n    margin-right: 8px;\n  }\n"]);
+
+function _taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
 
 
 
+
+
+
+var Logo = __WEBPACK_IMPORTED_MODULE_1_styled_components__["a" /* default */].img(_templateObject);
+
+var SearchInputWrapper = __WEBPACK_IMPORTED_MODULE_1_styled_components__["a" /* default */].div(_templateObject2);
 
 var TopBar = function TopBar() {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    __WEBPACK_IMPORTED_MODULE_1__styled__["b" /* TopBarWrapper */],
-    { bgColor: "green" },
+    __WEBPACK_IMPORTED_MODULE_2__styled__["a" /* TopBarWrapper */],
+    { bgColor: "#f11e22" },
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Logo, { src: "public/" + __WEBPACK_IMPORTED_MODULE_3__assets_Marvel_Logo_png___default.a, alt: "Logo" }),
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       "span",
       null,
-      "Super Marvel Team",
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__styled__["a" /* HeroCard */], null)
+      "Super Marvel Team"
     ),
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: __WEBPACK_IMPORTED_MODULE_2__assets_Marvel_Logo_png___default.a, alt: "Logo" })
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      SearchInputWrapper,
+      null,
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", null),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        "button",
+        null,
+        "search"
+      )
+    )
   );
 };
 
@@ -29181,8 +29212,8 @@ var TopBar = function TopBar() {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__HeroCard__ = __webpack_require__(235);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__TopBarWrapper__ = __webpack_require__(242);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__HeroCard__["a"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__TopBarWrapper__["a"]; });
+/* unused harmony reexport HeroCard */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__TopBarWrapper__["a"]; });
 
 
 
@@ -29202,7 +29233,7 @@ function _taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return s
 
 var HeroCard = __WEBPACK_IMPORTED_MODULE_0_styled_components__["a" /* default */].div(_templateObject);
 
-/* harmony default export */ __webpack_exports__["a"] = (HeroCard);
+/* unused harmony default export */ var _unused_webpack_default_export = (HeroCard);
 
 /***/ }),
 /* 236 */
@@ -30994,7 +31025,7 @@ module.exports = function hoistNonReactStatics(targetComponent, sourceComponent,
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_components__ = __webpack_require__(103);
-var _templateObject = _taggedTemplateLiteralLoose(["\n  width: 100%;\n  background-color: ", ";\n  display: flex;\n  justify-content: center;\n\n  span {\n    color: white;\n    font-size: 24px;\n  }\n"], ["\n  width: 100%;\n  background-color: ", ";\n  display: flex;\n  justify-content: center;\n\n  span {\n    color: white;\n    font-size: 24px;\n  }\n"]);
+var _templateObject = _taggedTemplateLiteralLoose(["\n  width: 100%;\n  background-color: ", ";\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n\n  span {\n    color: white;\n    font-size: 24px;\n    font-weight: bold;\n  }\n"], ["\n  width: 100%;\n  background-color: ", ";\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n\n  span {\n    color: white;\n    font-size: 24px;\n    font-weight: bold;\n  }\n"]);
 
 function _taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
 
@@ -31030,6 +31061,12 @@ var Detail = function Detail() {
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (Detail);
+
+/***/ }),
+/* 245 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "c7a2dd05d50b49111a74afe7ea588bf5.png";
 
 /***/ })
 /******/ ]);
