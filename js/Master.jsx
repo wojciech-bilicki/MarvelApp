@@ -1,33 +1,25 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { arrayOf } from "prop-types";
+import HeroCard from "./HeroCard";
 
-import TopBar from "./TopBar";
-
-import background from "../assets/background.png";
-
-const url = `public/${background}`;
-
-const Background = styled.img`
-  min-height: 100%;
-  min-width: 1024px;
-
-  width: 100%;
-  height: auto;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  opacity: 0.5;
+const CardListWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
 `;
 
-const Master = () => (
+const Master = props => (
   <div>
-    <TopBar />
-    <Background src={url} />
-    <Link to="/detail">Go to details</Link>
+    <CardListWrapper>
+      {props.heroes.map(hero => (
+        <HeroCard hero={hero} key={hero.id} label={Math.random()} />
+      ))}
+    </CardListWrapper>
   </div>
 );
+
+Master.propTypes = {
+  heroes: arrayOf(HeroCard.propTypes.hero).isRequired
+};
 
 export default Master;

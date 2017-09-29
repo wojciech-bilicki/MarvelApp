@@ -16,15 +16,25 @@ const SearchInputWrapper = styled.div`
   }
 `;
 
-const TopBar = () => (
-  <TopBarWrapper bgColor="#f11e22">
-    <Logo src={`public/${logo}`} alt="Logo" />
-    <span>Super Marvel Team</span>
-    <SearchInputWrapper>
-      <input />
-      <button>search</button>
-    </SearchInputWrapper>
-  </TopBarWrapper>
-);
+class TopBar extends React.Component {
+  state = {
+    searchTerm: "Test term"
+  };
+
+  onInputChange = event => this.setState({ searchTerm: event.target.value });
+
+  render() {
+    return (
+      <TopBarWrapper bgColor="#f11e22">
+        <Logo src={logo} alt="Logo" />
+        <span>Super Marvel Team</span>
+        <SearchInputWrapper>
+          <input value={this.state.searchTerm} onChange={this.onInputChange} />
+          <button>search</button>
+        </SearchInputWrapper>
+      </TopBarWrapper>
+    );
+  }
+}
 
 export default TopBar;

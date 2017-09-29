@@ -6,10 +6,10 @@ module.exports = {
   devtool: "source-map",
   output: {
     path: path.join(__dirname, "public"),
-    filename: "bundle.js"
+    filename: "bundle.js",
+    publicPath: "/public/"
   },
   devServer: {
-    publicPath: path.join(__dirname, "public"),
     historyApiFallback: true
   },
   resolve: {
