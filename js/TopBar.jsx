@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import { TopBarWrapper } from "./styled";
 import logo from "../assets/Marvel-Logo.png";
 
@@ -18,7 +19,7 @@ const SearchInputWrapper = styled.div`
 
 class TopBar extends React.Component {
   state = {
-    searchTerm: "Test term"
+    searchTerm: ""
   };
 
   onInputChange = event => this.setState({ searchTerm: event.target.value });
@@ -30,7 +31,9 @@ class TopBar extends React.Component {
         <span>Super Marvel Team</span>
         <SearchInputWrapper>
           <input value={this.state.searchTerm} onChange={this.onInputChange} />
-          <button>search</button>
+          <Link to={`/search/${this.state.searchTerm}`}>
+            <button>search</button>
+          </Link>
         </SearchInputWrapper>
       </TopBarWrapper>
     );

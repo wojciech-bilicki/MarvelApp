@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TopBar renders properly 1`] = `
+<header
+  className="sc-bwzfXH crSExb"
+>
+  <img
+    alt="Logo"
+    className="sc-htpNat eEBEcq"
+    src="test-file-stub"
+  />
+  <span>
+    Super Hero Team
+  </span>
+  <div
+    className="sc-bxivhb fkUwg"
+  >
+    <input
+      onChange={[Function]}
+      value=""
+    />
+    <Link
+      to="/search/"
+    >
+      <button>
+        search
+      </button>
+    </Link>
+  </div>
+</header>
+`;
+
+exports[`TopBar should render properly 1`] = `
+<styled.header
+  bgColor="#f11e22"
+>
+  <styled.img
+    alt="Logo"
+    src="test-file-stub"
+  />
+  <span>
+    Super Hero Team
+  </span>
+  <styled.div>
+    <input
+      onChange={[Function]}
+      value=""
+    />
+    <Link
+      to="/search/"
+    >
+      <button>
+        search
+      </button>
+    </Link>
+  </styled.div>
+</styled.header>
+`;

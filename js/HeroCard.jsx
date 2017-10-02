@@ -35,7 +35,7 @@ const HeroCardWrapper = styled.div`
 
 const HeroCard = ({ hero }) => (
   <HeroCardWrapper>
-    <h4>{hero.name}</h4>
+    <h3>{hero.name}</h3>
     <img src={`../assets/portraits/${hero.image}`} alt="HeroImage" />
     <h5>{hero.true_name}</h5>
     <button>Add to my heroes</button>

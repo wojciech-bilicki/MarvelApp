@@ -35,6 +35,16 @@ const App = () => (
           path="/"
           component={() => <Master heroes={data.heroes} />}
         />
+        <Route
+          exact
+          path="/search/:searchTerm?"
+          component={props => (
+            <Master
+              heroes={data.heroes}
+              searchTerm={props.match.params.searchTerm}
+            />
+          )}
+        />
         <Route path="/detail" component={Detail} />
       </Switch>
     </div>
