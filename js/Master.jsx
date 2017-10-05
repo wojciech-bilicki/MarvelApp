@@ -1,14 +1,20 @@
+// @flow
 import React from "react";
 import styled from "styled-components";
-import { arrayOf, string } from "prop-types";
 import HeroCard from "./HeroCard";
+import type {Hero} from './types';
 
 const CardListWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
 `;
 
-const Master = props => (
+type Props = {
+  searchTerm: string,
+  heroes: Array<Hero>
+}
+
+const Master = (props: Props) => (
   <div>
     <CardListWrapper>
       {props.heroes
@@ -26,14 +32,5 @@ const Master = props => (
     </CardListWrapper>
   </div>
 );
-
-Master.propTypes = {
-  heroes: arrayOf(HeroCard.propTypes.hero).isRequired,
-  searchTerm: string
-};
-
-Master.defaultProps = {
-  searchTerm: ""
-};
 
 export default Master;

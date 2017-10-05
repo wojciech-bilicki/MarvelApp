@@ -2,7 +2,7 @@
   "heroes": [
     {
       "id": 0,
-      "name": "Mephisto",
+      "name": "Mepfisto",
       "true_name": "Nick Scratch",
       "powers": [
         "force blast",
@@ -19,7 +19,7 @@
     },
     {
       "id": 1,
-      "name": "Black Widow",
+      "name": "Black Window",
       "true_name": "Natalia \"Natasha\" Alianovna Romanova",
       "powers": [
         "slowed aging",

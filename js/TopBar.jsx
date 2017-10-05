@@ -1,3 +1,4 @@
+// @flow
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
@@ -17,12 +18,17 @@ const SearchInputWrapper = styled.div`
   }
 `;
 
-class TopBar extends React.Component {
-  state = {
-    searchTerm: ""
-  };
+type State = {
+  searchTerm: string
+};
 
-  onInputChange = event => this.setState({ searchTerm: event.target.value });
+class TopBar extends React.Component<null, State>{
+
+  state = {
+    searchTerm: ''
+  }
+
+  onInputChange = (event: {target: HTMLInputElement}) => this.setState({ searchTerm: event.target.value });
 
   render() {
     return (
@@ -32,7 +38,7 @@ class TopBar extends React.Component {
         <SearchInputWrapper>
           <input value={this.state.searchTerm} onChange={this.onInputChange} />
           <Link to={`/search/${this.state.searchTerm}`}>
-            <button>search</button>
+            <button>Poszukaj2</button>
           </Link>
         </SearchInputWrapper>
       </TopBarWrapper>

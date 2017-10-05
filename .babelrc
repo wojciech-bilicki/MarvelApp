@@ -1,7 +1,8 @@
 {
-  "plugins": ["transform-class-properties"],
+  "plugins": ["transform-class-properties","react-hot-loader/babel"],
   "presets": [
     "react",
+    "flow",
     [
       "env",
       {

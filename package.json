@@ -11,6 +11,7 @@
     "babel-loader": "^7.1.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "^1.6.0",
+    "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
     "enzyme": "^2.9.1",
     "eslint": "3.x",
@@ -23,10 +24,13 @@
     "eslint-plugin-prettier": "^2.3.1",
     "eslint-plugin-react": "^7.4.0",
     "file-loader": "^0.11.2",
+    "flow-bin": "^0.56.0",
+    "flow-typed": "^2.1.5",
     "istanbul": "^0.4.5",
     "jest": "^21.2.1",
     "jest-serializer-enzyme": "^1.0.0",
     "prettier": "^1.7.0",
+    "react-hot-loader": "3.0.0-beta.6",
     "react-test-renderer": "^15.6.1",
     "url-loader": "^0.5.9",
     "webpack": "^3.6.0",
@@ -41,7 +45,8 @@
     "test": "jest",
     "updateSnapshots": "jest --u",
     "testCoverage": "jest --coverage",
-    "testWatch": "jest --watch"
+    "testWatch": "jest --watch",
+    "flowTyped": "flow-typed install"
   },
   "dependencies": {
     "prop-types": "^15.6.0",
@@ -55,6 +60,8 @@
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png)$": "<rootDir>/__mocks__/fileMock.js"
     },
-    "snapshotSerializers": ["jest-serializer-enzyme"]
+    "snapshotSerializers": [
+      "jest-serializer-enzyme"
+    ]
   }
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import styled from "styled-components";
 
@@ -41,7 +40,7 @@ const App = () => (
           component={props => (
             <Master
               heroes={data.heroes}
-              searchTerm={props.match.params.searchTerm}
+              searchTerm={props.match.params.searchTerm} //eslint-disable-line
             />
           )}
         />
@@ -51,4 +50,4 @@ const App = () => (
   </BrowserRouter>
 );
 
-ReactDOM.render(React.createElement(App), document.getElementById("app"));
+export default App;
