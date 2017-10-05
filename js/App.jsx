@@ -7,8 +7,6 @@ import Detail from "./Detail";
 import TopBar from "./TopBar";
 import background from "../assets/background.png";
 
-import data from "../data.json";
-
 const Background = styled.img`
   min-height: 100%;
   min-width: 1024px;
@@ -32,14 +30,13 @@ const App = () => (
         <Route
           exact
           path="/"
-          component={() => <Master heroes={data.heroes} />}
+          component={Master}
         />
         <Route
           exact
           path="/search/:searchTerm?"
           component={props => (
             <Master
-              heroes={data.heroes}
               searchTerm={props.match.params.searchTerm} //eslint-disable-line
             />
           )}

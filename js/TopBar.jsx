@@ -28,7 +28,9 @@ class TopBar extends React.Component<null, State>{
     searchTerm: ''
   }
 
-  onInputChange = (event: {target: HTMLInputElement}) => this.setState({ searchTerm: event.target.value });
+  onInputChange = (event: {target: HTMLInputElement}) => {
+    this.setState({ searchTerm: event.target.value })
+  };
 
   render() {
     return (

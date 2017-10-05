@@ -1,0 +1,929 @@
+{
+  "heroes": [
+    {
+      "id": 0,
+      "name": "Mephisto",
+      "true_name": "Nick Scratch",
+      "powers": [
+        "force blast",
+        "astral projection",
+        "interdimiensional portals",
+        "illusions",
+        "shape shifting",
+        "soul capturing"
+      ],
+      "place_of_birth": "Unknown",
+      "citizenship": "Hell",
+      "image": "mephisto.jpg",
+      "description": "Mephisto is an extra-dimensional demon whose origin is unknown. He rules a fiery pocket dimension that he calls \"Hell\" or \"Hades\" although it is neither the hell of the Christian religion nor the Hades ruled by Pluto, the Olympian god of the dead. Mephisto calls his extra-dimensional realm \"hell\" in order to exploit Earth human beings' belief in a single being of absolute evil, who is often referred to as Satan, who rules such a realm.",
+      "comics": [
+        5,
+        9,
+        20,
+        26
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Black Widow",
+      "true_name": "Natalia \"Natasha\" Alianovna Romanova",
+      "powers": [
+        "slowed aging",
+        "enahnced immune system",
+        "martail arts",
+        "pistols"
+      ],
+      "place_of_birth": "Stalingrad, U.S.S.R",
+      "citizenship": "Former U.S.S.R, U.S.A",
+      "image": "black_widow.jpg",
+      "comics": [
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        18,
+        26
+      ],
+      "description": "There are varying accounts of Romanova's early life. One account states that in 1928, Nazis set the building in Stalingrad that Natasha and her mother were living in on fire. Her mother threw her out the window to a Russian soldier before dying in the fire.[6][8] The soldier's name was Ivan Petrovitch, and he watched over Natasha for her entire life, remaining by her side as her \"foster father\"."
+    },
+    {
+      "id": 2,
+      "name": "Captain America",
+      "true_name": "Steven \"Steve\" Rogers",
+      "powers": [
+        "high strength",
+        "high reaction time",
+        "Vibranium shield"
+      ],
+      "place_of_birth": "New York, U.S.A",
+      "citizenship": "U.S.A",
+      "image": "captain_america.jpg",
+      "comics": [
+        0,
+        1,
+        5,
+        6,
+        7,
+        8,
+        11,
+        13,
+        17,
+        18,
+        21,
+        22,
+        23,
+        25,
+        26,
+        29,
+        30,
+        31
+      ],
+      "description": "During the dark days of the early 1940's, a covert US military experiment turned Steve Rogers into America's first Super-Soldier, Captain America. Throughout the war, Cap and his partner Bucky Barnes fought alongside infantry and with a group of heroes known as the Invaders. In the closing months of World War II, Captain America and Bucky were both presumed dead in an explosion. Few decades later, Captain America was found trapped in ice and revived in the modern world."
+    },
+    {
+      "id": 3,
+      "name": "Doctor Doom",
+      "true_name": "Victor von Doom",
+      "powers": [
+        "exchange mind",
+        "energy bolts",
+        "jet engine",
+        "power armor"
+      ],
+      "place_of_birth": "Haasenstadt, Latveria",
+      "citizenship": "Latveria",
+      "image": "doctor_doom.jpg",
+      "comics": [
+        9,
+        10,
+        11,
+        16,
+        20,
+        21,
+        25,
+        26,
+        30,
+        31
+      ],
+      "description": "The Latverian Monarch known to many as Doctor Doom was born a brilliant person named Victor von Doom. In a deal with the devil, his mother sacrificed her soul in return for her son to be a ruler. He spent much of his life studying both dark magic and science, only to have his plans continually foiled by meddling superheroes. As monarch of Latveria, Doom's rule is dealt with a heavy hand. Between his time platform (the first known time machine on Earth) and his doombots (robotic replicas of himself with artificial intelligence), Doom is a brilliant inventor and scientist. While at the same time, he is one of the most powerful sorcerers in existence, making him easily amongst the most dangerous villains on Earth."
+    },
+    {
+      "id": 4,
+      "name": "Hulk",
+      "true_name": "Bruce Banner",
+      "powers": [
+        "limitless power",
+        "super jump",
+        "HULK SMASH!!",
+        "shock wave",
+        "nuclear physics knowledge"
+      ],
+      "place_of_birth": "Dayton, Ohio",
+      "citizenship": "U.S.A",
+      "image": "hulk.jpg",
+      "comics": [
+        7,
+        11,
+        12,
+        13,
+        14,
+        18,
+        25,
+        26,
+        28,
+        37
+      ],
+      "description": "Bruce Banner was a scientist who was working on a gamma bomb when he noticed teenager Rick Jones out on the test range. Although he rushed out into the test site and heroically pushed the boy into the protective trench to save him from the blast, Bruce was exposed to extreme amounts of gamma radiation that altered his DNA structure due to gamma rays and trauma passed down by his Father and caused him to become a giant green (at first grey) monster of incredible power whenever he starts to get angry."
+    },
+    {
+      "id": 5,
+      "name": "Iron Man",
+      "true_name": "Anthony Start",
+      "powers": [
+        "genius engineer",
+        "repulsor rays",
+        "plasma discharges",
+        "sonic generators",
+        "mini missiles"
+      ],
+      "place_of_birth": "Long Island, New York",
+      "citizenship": "U.S.A",
+      "image": "iron_man.jpg",
+      "comics": [
+        1,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        25,
+        26,
+        27,
+        29,
+        30
+      ],
+      "description": "Iron Man is one of the most widely known superheroes in the world. Anthony Edward \"Tony\" Stark was born with extreme intelligence. After the death of his parents when he was 21, Stark inherited Stark Enterprises. After being wounded while in a war zone, he built an armored suit that would help to keep him alive. Stark helped to organize the superhero team, The Avengers early in his career as a superhero. Originally, Tony Stark had no powers of his own, and he depended on his armored suit for all of his superhuman abilities, until he injected himself with the Extremis virus and later had an R.T. node implanted in his chest, gaining new abilities and intellect. Iron Man was created by Stan Lee, Larry Lieber, Don Heck and Jack Kirby, first appearing in Tales of Suspense #39."
+    },
+    {
+      "id": 6,
+      "name": "Hawkeye",
+      "true_name": "Clinton Francis \"Clint\" Barton",
+      "powers": [
+        "world-class archer",
+        "knife throwing",
+        "weapon designer",
+        "pilot"
+      ],
+      "place_of_birth": "Waverly, Iowa",
+      "citizenship": "U.S.A. with a criminal record, pardoned",
+      "image": "hawkeye.jpg",
+      "comics": [
+        1,
+        4,
+        5,
+        7,
+        17,
+        18,
+        29,
+        31,
+        36
+      ],
+      "description": "Clinton Barton was a former circus worker and criminal-turned-hero, who received his archery skills as a young boy through training with Swordsman and Trickshot. Barton would eventually join both the East Coast and West Coast branches of The Avengers, even leading at one time. Hawkeye was created by Stan Lee and Don Heck, first appearing in Tales of Suspense #57. (1964)"
+    },
+    {
+      "id": 7,
+      "name": "Loki",
+      "true_name": "Loki Laufeyson",
+      "powers": [
+        "increased lifespan",
+        "superhuman strength",
+        "astral projection",
+        "eldritch energy blast",
+        "telepathy",
+        "hypnosis",
+        "teleportation",
+        "immunity to physical injury"
+      ],
+      "place_of_birth": "Jotunheim, Asgard",
+      "citizenship": "Realm of Asgard",
+      "image": "loki.jpg",
+      "comics": [
+        10,
+        11,
+        14,
+        19,
+        20,
+        34
+      ],
+      "description": "Loki Laufeyson is the son of Queen Farbauti and King Laufey, leader of the Giants of Jotunheim. He was born small and was an embarrassment to his parents, and was segregated from other Giants."
+    },
+    {
+      "id": 8,
+      "name": "Red Skull",
+      "true_name": "Johann Shmidt",
+      "powers": [
+        "dust of death",
+        "laser beam",
+        "master of disguise",
+        "skilled tactician",
+        "robotic Sleepers"
+      ],
+      "place_of_birth": "unidentified village in Germany",
+      "citizenship": "Germany",
+      "image": "red_skull.jpg",
+      "comics": [
+        21,
+        22,
+        23
+      ],
+      "description": "Johann Shmidt, the Red Skull, was the son of a coarse, drunken German villager named Hermann Shmidt and his reportedly saintly, long-suffering wife Martha, who for years endured abuse and beatings from her husband. Martha died giving birth to Johann, their only child. Driven to madness by the death of the woman he both loved and hated, Hermann Shmidt tried to drown the newborn infant, accusing him of murdering Martha. The doctor who had just delivered the baby saved Johann from his abused father, and the next morning Hermann Shmidt committed suicide."
+    },
+    {
+      "id": 9,
+      "name": "Thanos",
+      "true_name": "Thanos",
+      "powers": [
+        "immunity to elements",
+        "super agility",
+        "psionic blast",
+        "mystical knowledge",
+        "Infinity Gauntlet"
+      ],
+      "place_of_birth": "Eternal colony, Titan",
+      "citizenship": "Titan",
+      "image": "thanos.jpg",
+      "comics": [
+        24,
+        25,
+        26
+      ],
+      "description": "Thanos was one of the last sons of A'Lars, progenitor of the second colony of Eternals on Titan, and Sui-San, the last survivor of the original settlement of Eternals on Titan. Born with grey, hide-like skin and a massive body due to being born with the Deviant Syndrome, Thanos was a morose child who became obsessed with the concept of death. Through bionic implementation and long hours of meditation, Thanos augmented his Eternal strengths and powers so that his abilities surpassed those of all other Titanian Eternals."
+    },
+    {
+      "id": 10,
+      "name": "Spiderman",
+      "true_name": "Peter Parker",
+      "powers": [
+        "superhuman strength",
+        "world class acrobat",
+        "spider sense",
+        "shooting web",
+        "climbing"
+      ],
+      "place_of_birth": "Forest Hills, New York",
+      "citizenship": "U.S.A.",
+      "image": "spiderman.jpg",
+      "comics": [
+        2,
+        8,
+        10,
+        11,
+        18,
+        27,
+        28,
+        29,
+        32,
+        34,
+        37
+      ],
+      "description": "Peter Parker was bitten by a radioactive spider while in high school, the spider bite caused him to develop powers and abilities similar to that of a spider. He was soon able to crawl up walls and sense imminent danger, and eventually even developed his own method of creating webs to swing from. Upon the death of his Uncle Ben due to Peter's indifference, Peter decided that 'With Great Power there must also come Great Responsibility', and thus became Spider-Man."
+    },
+    {
+      "id": 11,
+      "name": "Ultron",
+      "true_name": "Ultron",
+      "powers": [
+        "flight",
+        "blasters",
+        "radiation_emitters",
+        "mind control",
+        "machine control"
+      ],
+      "place_of_birth": "Created in Cresskill, New Jersey",
+      "citizenship": "Inapplicable",
+      "image": "ultron.jpg",
+      "comics": [
+        21,
+        26,
+        30,
+        31,
+        32
+      ],
+      "description": "Ultron-1 was constructed by Dr. Hank Pym of the Avengers as the famed scientist/adventurer was experimenting in high-intelligence robotics. Ultron became sentient and rebelled, hypnotizing and brainwashing Pym into forgetting that Ultron had ever existed. He immediately began improving upon his rudimentary design, quickly upgrading himself several times to become Ultron-5. He then went on to organize the second incarnation of the Masters of Evil under the guise of the Crimson Cowl, and battled the Avengers."
+    },
+    {
+      "id": 12,
+      "name": "Thor",
+      "true_name": "Thor Odinson",
+      "powers": [
+        "superhuman strength",
+        "increased lifespan",
+        "Mjolnir",
+        "storm fury",
+        "portals to others dimensions"
+      ],
+      "place_of_birth": "Cave in Norway",
+      "citizenship": "Asgard, honorary US citizen",
+      "image": "thor.jpg",
+      "comics": [
+        5,
+        8,
+        10,
+        13,
+        14,
+        18,
+        19,
+        25,
+        26,
+        28,
+        31,
+        32,
+        34
+      ],
+      "description": "Leaping from the legends of Norse mythology, the Asgardian God of Thunder, Thor, is the son of Odin the All-Father and Jord, Elder Goddess and spirit of the Earth. He frequently stands alongside the Avengers in the defense of the people of Midgard (Earth), often against the schemes of his adopted brother Loki. He formerly dwelt in a recreation of Asgard in Oklahoma, using the mortal form of Donald Blake to provide a bridge between his people and the mortals surrounding them. However, Loki's subtle trickery and manipulations of Balder, combined with her time-twisting of Asgard's past and that of Bor and Odin's has enabled her to banish Thor from Asgard, stripping him of his titles, throne and legal power, and move his people to Doctor Doom's Latveria, having planned this ever since her rebirth. Thor returned to Asgard, just in time to aid them in a battle against Norman Osborn's Dark Avengers, X-Men, and H.A.M.M.E.R. forces, killing Sentry after he destroyed Asgard. Feeling lonely, Thor has resurrected his brother Loki and father Odin and they continue to battle-on for the survival of Asgard."
+    },
+    {
+      "id": 13,
+      "name": "Doctor Strange",
+      "true_name": "Stephen Vincent Strange",
+      "powers": [
+        "levitating cape",
+        "energy projection",
+        "matter transformation",
+        "animation of inanimate objects",
+        "time travel"
+      ],
+      "place_of_birth": "Philadelphia, Pennsylvania",
+      "citizenship": "U.S.A.",
+      "image": "doctor_strange.jpg",
+      "comics": [
+        7,
+        16,
+        18,
+        25,
+        26,
+        37,
+        38
+      ],
+      "description": "As Master of the Mystic Arts and Sorcerer Supreme, Doctor Strange is typically the world's foremost expert on magic, but it wasn't always that way. Earlier in his life, he was an arrogant professional surgeon, but when a car accident took his fine motor skills away from him, he became desperate and searched the globe for a cure. One was offered, not to cure his hands, but instead to cure his soul."
+    },
+    {
+      "id": 14,
+      "name": "Daredevil",
+      "true_name": "Matthew Michael Murdock",
+      "powers": [
+        "ehnanced senses",
+        "electromagnetic sense",
+        "martail arts",
+        "accomplished criminal trial lawyer"
+      ],
+      "place_of_birth": "New York, U.S.A",
+      "citizenship": "U.S.A",
+      "image": "daredevil.jpg",
+      "comics": [
+        2,
+        3,
+        4,
+        6,
+        11,
+        14,
+        18,
+        26
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Scarlett Witch",
+      "true_name": "Wanda Maximoff",
+      "powers": [
+        "hex spheres",
+        "entities creation",
+        "sorcery",
+        "flight"
+      ],
+      "place_of_birth": "Wundagore Mountain, Transia",
+      "citizenship": "Transia",
+      "image": "scarlet_witch.jpg",
+      "comics": [
+        6,
+        17,
+        18,
+        25,
+        31
+      ]
+    }
+  ],
+  "comics": [
+    {
+      "id": 0,
+      "title": "The Call of the Mountain Thing!",
+      "characters": [
+        15,
+        2
+      ],
+      "editor": "Jim Shooter",
+      "cover": "avengers_187.jpg",
+      "description": "Six Avengers arrive in Transia, barely surviving their Quinjet's crash-landing. Then Modred and the possessed Scarlet Witch attack, quickly defeating them. Then the Beast, separated from the others in the crash, discovers the armor and flying mechanical steed of a late Knight of Wundagore and, thus outfitted, he suddenly attacks, distracting Ch'thon and allowing the Avengers to resume the battle. All at once, Quicksilver realizes that Wanda's spirit now resides in the tiny marionette carved by Django Maximoff. Grasping the doll, the heroes pit their wills against the demon's, and Ch'thon's and Wanda's essences trade places. Pietro then flings the puppet into a chasm and the recovered Scarlet Witch causes the mountain to erupt, burying it forever. Sadly, Maximoff's heart gives out in the excitement, and he is laid to rest in the nearby forest. Modred, now virtually mindless, is taken in by Bova, and the weary Avengers depart for home. "
+    },
+    {
+      "id": 1,
+      "title": "Wings and Arrows",
+      "characters": [
+        2,
+        15,
+        6,
+        5
+      ],
+      "editor": "Jim Shooter",
+      "cover": "wings_and_arrows.jpg",
+      "description": "Thor is departing the Avengers, and totally ignores a returning Falcon. Things are still going back to normal as reserve Avengers called up to deal with Arsenal are taking their leave. Falcon goes active again and gets chewed out by Hawkeye, who's still bitter about being stripped from the team. Captain America contacts Gyrich to let him know the Avengers are getting back to normal, and Gyrich seems pleased until Wanda asks for her leave of absence to be extended! Gyrich throws a hissy fit and promises them he'll be in New York soon to straighten this out. Hawkeye returns to his apartment to find rejection letters galore. Then he spots a security guard job being offered. He sneaks into the place and waits in the manager's office, and is hired on the spot. His first night on the job an intruder breaks in and he goes to investigate. Its Deathbird! They battle, and after a grueling combat Hawkeye eventually outwits her and wraps her up in a titanium mesh net. Furious at being outwitted, Deathbird promises revenge, so Hawkeye gives her a big kiss to remember him by and walks off as she sputters.Things aren't going so well for the Avengers. Iron Man argues to Gyrich that they cannot force people to be Avengers, and Gyrich says fine, that's it, this is the end of the Avengers"
+    },
+    {
+      "id": 2,
+      "title": "Devil May Care",
+      "characters": [
+        14,
+        10
+      ],
+      "editor": "Joe Quesada",
+      "cover": "devil_may_care.jpg",
+      "description": "The Black Tarantula is released from prison and is trying to go straight. To find honest employment, he asks to assist Matt Murdock. Murdock employs him as \"security\" but soon has him fighting the underworld of Hell's Kitchen as the costumed Black Tarantula. As he himself is poverty stricken, Tarantula is tempted by the amount of underworld money that he sees. He eventually takes the money over Daredevil's wishes. When DD intervenes, Tarantula punches him senseless. He informs him that he is taking the underworld money to do good with it and exits."
+    },
+    {
+      "id": 3,
+      "title": "The King in Red",
+      "characters": [
+        14,
+        1
+      ],
+      "editor": "Axel Alonso",
+      "description": "Celebrate Daredevil’s fiftieth anniversary with a look at the future! A special standalone story that takes place on Matt Murdock’s 50th birthday. How has his life changed? Who lives? Who dies? See if you can spot all the clues the Daredevil creative team has planted for the year 2014! Plus: Stories by special guest creators from Murdock’s murky past! Fifty years without fear have all lead up to this!",
+      "cover": "the_king_in_red.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Daredevil Vol 4 11",
+      "characters": [
+        14,
+        6,
+        1
+      ],
+      "editor": "Axel Alonso",
+      "description": "Daredevil’s recent traumas have him coping in an unexpected way! A mystery that’s been building since issue one starts to pay off big! San Francisco now has TWO men without fear--and only one will be left standing! ",
+      "cover": "daredevil_vol4_11"
+    },
+    {
+      "id": 5,
+      "title": "His Satanic Majesty's Request",
+      "characters": [
+        0,
+        2,
+        5,
+        6,
+        12
+      ],
+      "editor": "Jim Shooter",
+      "description": "The East and West Coast Avengers unite against Mephisto in an all-out effort to end Mephisto's quest for souls!",
+      "cover": "his_satanic_majestys_request.jpg"
+    },
+    {
+      "id": 6,
+      "title": "The Itsy-Bitsy Spider: Uninvited",
+      "characters": [
+        1,
+        2,
+        5,
+        14,
+        15
+      ],
+      "editor": "Bob Harras",
+      "cover": "the_itsy_bitsy_spider_uninvited.jpg",
+      "description": "The Black Widow has been assigned to Rhapastan by both the Pentagon and Russian Intel to investigate a new bio weapon created by Dr. Didier Ines; however, the new Black Widow, Yelena Belova, has been shadowing her in order to take her place as the premiere spy of Russia. During the assignment, while following Natasha, the new Black Widow was caught by security. Although she defeated the security, Yelena quickly turned on the Natasha, but the latter escaped, though she was followed by Belova, with intent on killing the original Black Widow."
+    },
+    {
+      "id": 7,
+      "title": "Infinite Avengers",
+      "characters": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        13
+      ],
+      "editor": "Axel Alonso",
+      "cover": "infinite_avengers.jpg",
+      "description": ""
+    },
+    {
+      "id": 8,
+      "title": "Taking it to the House",
+      "characters": [
+        1,
+        2,
+        5,
+        10,
+        12
+      ],
+      "editor": "Axel Alonso",
+      "description": "Captain America and Black Widow lead the multiverse’s finest in a final assault on Venemma Multiversal! Black Widow vs. Black Widow...to the death! Forget 11…on a scale of 1 to AWESOME this eye-popping, senses-snapping, jaw-dropping final issue goes to 12!",
+      "cover": "taking_it_to_the_house.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Infamous Iron Man",
+      "characters": [
+        0,
+        3,
+        5
+      ],
+      "editor": "Axel Alonso",
+      "description": "Several years into the past, Doctor Doom and the Cabal were about to start a meeting. While the rest of the members waited for Norman Osborn, the Hood inquired Doom about the veracity of a story he had read, which documented how Doom had rescued his mother's soul from a demon. Doom's confirmation of these events as he orders the Hood to silence prompt the small-time villain to question what motivated Doom, considering his amount of power, prowess, and fortune. The Hood's insolence prompted Doom to blast him with a spell that banish him to India.",
+      "cover": "infamous_iron_man.jpg"
+    },
+    {
+      "id": 10,
+      "title": "The Anvil or the Hammer",
+      "characters": [
+        3,
+        7,
+        10,
+        12
+      ],
+      "editor": "Tom DeFalco",
+      "cover": "the_anvil_or_the_hammer.jpg",
+      "description": ""
+    },
+    {
+      "id": 11,
+      "title": "What If Doctor Doom Kept the Beyonder's Power",
+      "characters": [
+        2,
+        3,
+        4,
+        5,
+        7,
+        10,
+        14,
+        15
+      ],
+      "editor": "Joe Quesada",
+      "cover": "what_if_secret_wars.jpg",
+      "description": ""
+    },
+    {
+      "id": 12,
+      "title": "A Titan Stalks the Tenements!",
+      "characters": [
+        4,
+        5
+      ],
+      "editor": "Stan Lee",
+      "cover": "a_titan_stalks_the_tenements",
+      "description": "Continued from last issue... The Hulk, separated from Bruce Banner decides that he needs to find a place to hide out before planning his next attempt to destroy Bruce Banner. Meanwhile at a nearby military base, General Ross, Bruce Banner and Betty Ross are also determining how to deal with the now unrestrained Hulk. Although Ross believes that they should destroy the monster however Banner refuses this as an option, theorizing that killing the Hulk would in turn kill him because they are still linked."
+    },
+    {
+      "id": 13,
+      "title": "The Ω Hulk: Chapter Twelve",
+      "characters": [
+        2,
+        4,
+        5,
+        12,
+        14
+      ],
+      "editor": "Axel Alonso",
+      "cover": "hulk_chapter_twevlve",
+      "description": "With his life coming to an end, Doc Green and Bruce Banner spend time communicating with one another via a white board. The two vent their mutual frustrations for each other. However, the two agree that they must work together now and decide to go and find their cousin, Jennifer Walters. This has brought them to Brooklyn where they find She-Hulk waiting for Doc Green with an army of SHIELD soldiers, the Invisible Woman, as well as Iron Man, Thor, Captain America, and the Vision of the Avengers. They have come to stop Doc Green from depowering the She-Hulk as he has done with all the other gamma mutates on Earth. However, Doc Green tells them that he only wishes to talk to his cousin. She-Hulk agrees to talk, but Captain America and the others are not willing to leave the Hulk to his own devices. Doc Green responds by giving them to the count of ten before things get violent, however before a fight can start, She-Hulk steps in and reiterates that she will talk with her cousin. To smooth things over, Doc Green offers to leave the syringe of his gamma cure outside. It is snatched out of his hand by the Invisible Woman as soon as it is in sight. With the threat to Jen's powers out of the way, the two Hulks go into a nearby building to talk. The first thing she asks him is where Lyra is. Doc Green tells her that it is complicated and when he tells her what happened she reacts angrily."
+    },
+    {
+      "id": 14,
+      "title": "The Coming of the Avengers",
+      "characters": [
+        4,
+        5,
+        7,
+        12
+      ],
+      "editor": "Stan Lee",
+      "cover": "the_coming_of_the_avengers",
+      "description": "Loki, having been previously captured by Thor, is being held prisoner at the Isle of Silence in Asgard. His physical form may be confined there, but by means of thought projection his disembodied self travels to Earth in search of revenge. He spots Thor in his human identity of Dr. Don Blake, but resists defeating him as it would be a hollow victory compared to defeating him as Thor. After hours of searching, Loki happens across the Hulk and devises a wicked plan to entice Blake to transform into Thor. He projects a mental image of dynamite on the tracks of a nearby railway bridge. The Hulk spots the dynamite and attempts to snuff it out, accidentally destroying the bridge. Suddenly, a train appears on the tracks travelling towards the wreckage. Valiantly, the Hulk manages to hold the tracks up long enough for the train to pass safely before allowing it to collapse. Unfortunately the damage has already been done and Loki's plan was successful."
+    },
+    {
+      "id": 15,
+      "title": "Iron Man Is Born",
+      "characters": [
+        5
+      ],
+      "editor": "Stan Lee",
+      "cover": "iron_man_is_born.jpg",
+      "description": "In a closely guarded lab, Anthony \"Tony\" Stark shows off a new invention to US military defense officials. He has developed micro-transistors capable of powering up things such as magnets; turning them into powerful weapons strong enough to pull open a thick metal door from a distance. They increase magnetic force a thousandfold! Stark impresses the military brass with his new inventions, while at the same time impressing the ladies of the international jet set with his dashing good looks and incredible personal wealth."
+    },
+    {
+      "id": 16,
+      "title": "Invincible Iron Man #5",
+      "characters": [
+        3,
+        5,
+        13
+      ],
+      "editor": "Axel Alonso",
+      "cover": "invincible_iron_man.jpg",
+      "description": "Mary Jane Watson witnesses as the confrontation between Iron Man, Victor von Doom, and Madame Masque potentially ruins her entire life with the damage of her newest club. The two allies try to contain Madame Masque in mix of energy and magic force-fields to neutralize her, but she takes hold of Doom and soon starts compromising Iron Man's armor."
+    },
+    {
+      "id": 17,
+      "title": "Listen to the Mockinbird",
+      "characters": [
+        2,
+        5,
+        6,
+        15
+      ],
+      "editor": "Jim Shooter",
+      "cover": "listen_to_mockinbird",
+      "description": "Hawkeye tests his new Cycle out made by Jorge Latham and then takes his new girlfriend Sheila Danning back to his apartment. Clint tells Sheila about his past and the events which lead him to become Hawkeye. Afterwards, Clint is sent back to Cross to deal with an intruder which turns out to be Mockingbird."
+    },
+    {
+      "id": 18,
+      "title": "Till Death Do Us Part",
+      "characters": [
+        1,
+        2,
+        4,
+        6,
+        10,
+        12,
+        13,
+        14,
+        15
+      ],
+      "editor": "Jim Shooter",
+      "cover": "till_death_do_us_part.jpg",
+      "description": "Waking up in the basement of a mortuary, Hawkeye and Mockingbird find out that they have been captured by Crossfire, and he was the one who hired Silencer, Oddball and Bombshell to attack the two heroes. Crossfire then reveals that he plans to kill Hawkeye and arrange it that at his funeral he will brainwash all the heroes that attend into fighting each other to the death. Then Oddball and Bombshell take Hawkeye and Mockingbird into a room so that Crossfire can test his brainwashing machine, called the Undertaker Machine, and make the two heroes fight to the death. Hawkeye and Mockingbird share a kiss before they are forced to fight."
+    },
+    {
+      "id": 19,
+      "title": "Loki, Part One",
+      "characters": [
+        7,
+        12
+      ],
+      "editor": "Joe Quesada",
+      "cover": "loki_part_one.jpg",
+      "description": "Loki has claimed leadership of Asgard, and all must recognize that fact, even Thor. Thor and Sif are his prisoners, but finally winning his long sought prize, is not quite as sweet as he once thought. The ones that helped him now demand their due, including the death goddess Hela."
+    },
+    {
+      "id": 20,
+      "title": "Siege: Loki Vol 1",
+      "characters": [
+        0,
+        3,
+        7
+      ],
+      "editor": "Joe Quesada",
+      "cover": "loki_siege.jpg",
+      "description": "Loki continues to move his plans forward. In Latveria, Loki seeks out the Asgardians he had sent to kill Bill, and finding their spirits, entraps them in order to bring out the Disir. They arrive, and Loki defeats them, gaining their servitude. He then travels to Las Vegas to visit his daughter Hela, and reveals to her that the Disir are indeed real. There will be many fallen during the siege of Asgard, and Loki wonders if she has prepared for them. She tells him that of course she hasn't, she is Hela without a Hel. Loki wonders what boon could one request if he delivered unto her a new Hel. In Mephisto's realm, Loki and Mephisto discuss a real estate deal. If he will ceede to Hela a slice of his own realm for 1001 years, Loki will give the leash of the Disir to him for 101 days. Above Asgard, Loki, Mephisto and Hela agree to the contract. Mephisto will gain the control of the Disir, Hela gets a new realm of her own, and Loki is stricken from the Books of Hel. When he dies, he is Hel-bound no more. Absolute freedom is now is. "
+    },
+    {
+      "id": 21,
+      "title": "Part Three: Freedom",
+      "characters": [
+        2,
+        3,
+        8,
+        11
+      ],
+      "editor": "Axel Alonso",
+      "cover": "part_three_freedom.jpg",
+      "description": "The Deadlands have pushed Magneto’s mind to the brink of madness... Can the Shield survive an attack from the Red Skull’s new army?! Is there anyone left to defeat the Red Skull? "
+    },
+    {
+      "id": 22,
+      "title": "Return of the Red Skull",
+      "characters": [
+        2,
+        8
+      ],
+      "editor": "Martin Goodman",
+      "cover": "return_of_the_dead_skull.jpg",
+      "description": "Having survived his previous encounter with Captain America and Bucky, the Red Skull vows to get revenge on the two heroes and continue his reign of terror against the United States of America for the Nazi cause. To this end he targets Major Douglas who is guarding plans for a new power drill device that the military plans to develop. He murders Douglas and steals the plan. His actions alert the attention of Steve Rogers and Bucky who had just finished dropping off the plans and they arrive to find the Red Skull's calling card: a box containing a miniature red skull. Changing into Captain America and Bucky, the duo chase after the Skull but lose him when they are attacked by his goons."
+    },
+    {
+      "id": 23,
+      "title": "Sturm und Drang: The Life and Times of the Red Skull!",
+      "characters": [
+        2,
+        8
+      ],
+      "editor": "James Shooter",
+      "cover": "sturm_und_drang.jpg",
+      "description": "THE DEFINITIVE origin of the Red Skull. Many details of his early childhood and later life are revealed. Captain America, who has recently aged greatly due to the Skull's masterplan, remains his captive and the Skull reveals his intention for both of them to die together battling each other."
+    },
+    {
+      "id": 24,
+      "title": "Schemes and Dreams",
+      "characters": [
+        9
+      ],
+      "editor": "Tom DeFalco",
+      "cover": "schemes_and_dreams.jpg",
+      "description": "Thanos persuades Death to allow him to search the Soul Gems. However, he hides his real reasons from Death. Thanos states, that the six Soul Gems should be called the Infinity Gems more properly since only one really affects the Soul. Thanos wrests the Soul Gem from the In-Betweener, the Gem of Power from the Champion and the Time Gem from the Gardener."
+    },
+    {
+      "id": 25,
+      "title": "Predestination",
+      "characters": [
+        2,
+        3,
+        4,
+        5,
+        9,
+        12,
+        13,
+        15
+      ],
+      "editor": "Joe Quesada",
+      "cover": "predestination.jpg",
+      "description": "The story begins with the \"Heart of the Universe\", an energy source located by a large group of alien explorers who learned to use it's power millennium ago. Becoming the \"Celestial Order\", they used the energy's power source to bring universal peace by appointing beings worthy of the Heart's power. The Order chose the ancient pharaoh Akhenaten as Earth's agent."
+    },
+    {
+      "id": 26,
+      "title": "Omnipotence",
+      "characters": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        9,
+        11,
+        12,
+        13,
+        14
+      ],
+      "editor": "Joe Quesada",
+      "cover": "omnipotence.jpg",
+      "description": ""
+    },
+    {
+      "id": 27,
+      "title": "Spider-Man",
+      "characters": [
+        10
+      ],
+      "editor": "Stan Lee",
+      "cover": "spider-man.jpg",
+      "description": "With the Parker household desperate for money following the death of Ben Parker, Peter Parker decides to continue in show business as Spider-Man. However, not only does he find it impossible to cash his paycheck (made out to Spider-Man), but the irrational editorials by J. Jonah Jameson in the Daily Bugle effectively quelch his career. Besides denouncing Spider-Man as a publicity-seeking phony, J. Jonah Jameson also publishes articles lauding his son, John Jameson, a courageous astronaut about to be launched into orbit in a space capsule. J. Jonah Jameson calls his son a \"real hero.\""
+    },
+    {
+      "id": 28,
+      "title": "The Extremist: Part 1",
+      "characters": [
+        5,
+        10,
+        12
+      ],
+      "editor": "Joe Quesada",
+      "cover": "the_extremist_part_1",
+      "description": "IN TIME FOR HEROIC AGE…A BOLD NEW ERA IN WEB OF SPIDER-MAN! With an Age of Heroes unfolding around him, Superhero-Critic-in-Chief, Mayor J. Jonah Jameson, finds himself the target of a vicious assassination plot courtesy of a pro-super human vigilante in THE EXTREMIST – PART 1!"
+    },
+    {
+      "id": 29,
+      "title": "Denial",
+      "characters": [
+        4,
+        10
+      ],
+      "editor": "Bob Harras",
+      "cover": "denial.jpg",
+      "description": ""
+    },
+    {
+      "id": 30,
+      "title": "Age of Ultron: Book One",
+      "characters": [
+        2,
+        5,
+        6,
+        11
+      ],
+      "editor": "Axel Alonso",
+      "cover": "age_of_ultron.jpg",
+      "description": "The story opens with the city of New York, which looks completely obliterated, ravaged, destroyed, and above it all it floats a gigantic technological fortress. Hiding inside the alleys of the ruined city, Avengers member Hawkeye assaults a group of Mutant Growth Hormone dealers, killing them with his arrows. Clint discovers that the group is led by the Owl and Hammerhead, who are also holding a hostage. Owl and Hammerhead head out to confront Hawkeye, who keeps his raid going forward, eliminating the members until he reaches the basement where the hostage is held and is revealed to be Spider-Man."
+    },
+    {
+      "id": 31,
+      "title": "Heroes assembled",
+      "characters": [
+        2,
+        3,
+        5,
+        11,
+        12,
+        15
+      ],
+      "editor": "Joe Quesada",
+      "cover": "heroes_assembled.jpg",
+      "description": ""
+    },
+    {
+      "id": 32,
+      "title": "Rage of Ultron",
+      "characters": [
+        2,
+        3,
+        6,
+        10,
+        11,
+        12
+      ],
+      "editor": "Axel Alonso",
+      "cover": "rage_of_ultron.jpg",
+      "description": "A nihilist narration tells us Ultron's perspective: The humans dismiss logic and bend to imaginary Gods, depend on the achievements of the 0.1 percent of them that have given them everything, which they use to constantly slaughter each other for trivialities. They are hopeless, an infection that awaits to be cured by his rage. In New York City, years ago, a crowd runs in fear as the city is under attack. Captain America, running in the opposite direction of the crowd, spots a woman with a broken ankle tripping and goes to help her. Ultron emerges from the ground, but Cap manages to save the woman from debris. Two men help the woman get await while Cap protects them from Ultron. The automaton says the Captain can only give them false hope and continues to attack, but Beast and Hawkeye arrive. Beast punches Ultron and playfully dodge his attacks while Caps cuts is head off with his shield and Hawkeye throws an explosive arrow inside him. Beast says that was only one of Ultron's copies, while Hawkeye tries to get the crowd to move. They don't listen until Cap tells them to get off the island."
+    },
+    {
+      "id": 33,
+      "title": "Thor the Mighty and the Stone Men from Saturn!",
+      "characters": [
+        12
+      ],
+      "editor": "Stan Lee",
+      "cover": "thor.jpg",
+      "description": "Donald Blake, a doctor from the United States, is visiting Norway. At the same time, a ship from Saturn lands nearby as advance scouts for a planned invasion. A local fisherman spots them and alerts the villagers, but they dismiss him. Blake overhears and goes to look for himself. When he steps on a twig, the aliens notice him. He flees into the hills, where he loses his cane. He runs into a cave, but the other entrance is blocked by a giant boulder. A secret door opens, revealing a chamber where Blake finds a walking stick. He tries to move the boulder with the stick but is unable to get leverage. Frustrated, he hits the boulder with the stick, and, in a flash of light, the stick transforms into a hammer, transforming Blake into Thor, the mythical Norse God of Thunder."
+    },
+    {
+      "id": 34,
+      "title": "And the Home of the Brave",
+      "characters": [
+        10,
+        12
+      ],
+      "editor": "Bob Harras",
+      "cover": "and_the_home_of_the_brave.jpg",
+      "description": "Thor tries to transport himself to Asgard, but as soon as he begins to materialize, he is instantly thrown back to Earth. While inside Asgard, Adva has secured a barrier so that none may enter. The Dark Gods want sport, they want to see a glorious battle, so they bring out Balder, who has already been badly beaten. Perrikus refuses to battle someone who is so little challenge, so Tokkots wants to be the one to dispatch him. Zelia bats him away easily, declaring that this is to be Perrikus' kill. Balder grabs a sword and lunges at Perrikus, but Perrikus easily knocks him away and slices him open."
+    },
+    {
+      "id": 35,
+      "title": "The Galactus Seed, Part 4: To Duel Against Galactus",
+      "characters": [
+        7,
+        12
+      ],
+      "editor": "Axel Alonso",
+      "cover": "galactus.jpg",
+      "description": "ASGARD RISES AGAINST GALACTUS! The World Eater has come for something buried deep within the heart of Fallen Asgard. As Odin leads an assault wave of gods against Galactus, a wounded Thor must contend with the Silver Surfer once more! All of which leaves Volstagg and Kid Loki in charge of the Shining City for an afternoon. What could possibly go wrong? "
+    },
+    {
+      "id": 36,
+      "title": "The Coming of Dr. Strange",
+      "characters": [
+        13
+      ],
+      "editor": "Stan Lee",
+      "cover": "dr_strange.jpg",
+      "description": "While recuperating at the Sanctum of his master the Ancient One, Dr. Strange sleeps and dreams of the events that led to him becoming a master of the mystic arts. What follows is an extended origin based on the events depicted in Strange Tales #115 following the end of his career as a surgeon due to car accident, becoming a drunken derelict and questing to restore his damaged hands. Learning of the Ancient One and attempting to become his disciple, after displaying a show of selflessness by trying to protect the Ancient One from the machinations of Karl Mordo, he is allowed to train under the Ancient One's tutelage. Strange awakens from his dream to the summons of the Ancient One."
+    },
+    {
+      "id": 37,
+      "title": "Strange Encounters",
+      "characters": [
+        6,
+        10,
+        13
+      ],
+      "editor": "Bob Harras",
+      "cover": "strange_encounters.jpg",
+      "description": ""
+    },
+    {
+      "id": 38,
+      "title": "Hot Spell",
+      "characters": [
+        4,
+        13
+      ],
+      "editor": "Tom DeFalco",
+      "cover": "hot_spell.jpg",
+      "description": "Rintrah studies up on his master's greatest foes."
+    }
+  ],
+  "favourites": [
+    10,
+    15,
+    8,
+    12,
+    14,
+    3
+  ]
+}
