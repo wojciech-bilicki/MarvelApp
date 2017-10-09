@@ -34,12 +34,12 @@ const HeroCardWrapper = styled.div`
   }
 `;
 
-const HeroCard = ({ hero }:{hero:Hero}) => (
+const HeroCard = ({ hero, onButtonClicked }:{hero:Hero, onButtonClicked: number => void }) => (
   <HeroCardWrapper>
     <h3>{hero.name}</h3>
-    <img src={`../assets/portraits/${hero.image}`} alt="HeroImage" />
+    <img src={hero.image} alt="HeroImage" />
     <h5>{hero.true_name}</h5>
-    <button>Add to my heroes</button>
+    <button onClick={() => onButtonClicked(hero.id)}>Add to my heroes</button>
   </HeroCardWrapper>
 );
 

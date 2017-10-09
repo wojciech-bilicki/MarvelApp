@@ -4,12 +4,18 @@ import styled from "styled-components";
 import axios from 'axios';
 
 import HeroCard from "./HeroCard";
+import MyHeroes from './MyHeroes';
 import type {Hero} from './types';
 
 
 const CardListWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
+  flex: 7;
+`;
+
+const MasterWrapper = styled.div`
+  display: flex;
 `;
 
 type Props = {
@@ -18,6 +24,7 @@ type Props = {
 
 type State = {
   heroes: Array<Hero>,
+  favouriteHeroes: Array<Hero>,
   loading: boolean
 }
 
@@ -25,6 +32,7 @@ class Master extends React.Component<Props, State> {
 
   state = {
     heroes: [],
+    favouriteHeroes: [],
     loading: true
   }
 
@@ -32,12 +40,29 @@ class Master extends React.Component<Props, State> {
     axios
       .get('http://localhost:8001/api/v1/heroes')
       .then(heroes => this.setState({heroes: heroes.data, loading: false}));
+    axios
+      .get('http://localhost:8001/api/v1/heroes/favourites').
+      then(favouriteHeroes => this.setState({ favouriteHeroes: favouriteHeroes.data, loading: false }))
+  }
+
+  onAddToFavouriteRequested = (heroId: number) => {
+    axios.post('http://localhost:8001/api/v1/heroes/favourites',heroId,{
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    }).then(
+      setTimeout(() => {
+        axios
+        .get('http://localhost:8001/api/v1/heroes/favourites').
+        then(favouriteHeroes => this.setState({ favouriteHeroes: favouriteHeroes.data }))
+      }, 3000)
+    )
   }
 
   render() {
-  const { loading, heroes} = this.state;
+  const { loading, heroes, favouriteHeroes} = this.state;
   const { searchTerm } = this.props;
-  return (<div>
+  return (<MasterWrapper>
     {loading && <h2>Dude, wft I am loading!</h2>}
     {!loading && <CardListWrapper>
       {heroes
@@ -51,9 +76,10 @@ class Master extends React.Component<Props, State> {
               .indexOf(searchTerm.toUpperCase()) >= 0
           );
         })
-        .map(hero => <HeroCard hero={hero} key={hero.id} />)}
+        .map(hero => <HeroCard hero={hero} key={hero.id} onButtonClicked={this.onAddToFavouriteRequested}/>)}
     </CardListWrapper>}
-  </div>)}
+    <MyHeroes favouriteHeroes={favouriteHeroes} />
+  </MasterWrapper>)}
 };
 
 export default Master;
