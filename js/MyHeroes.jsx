@@ -1,6 +1,7 @@
 // @flow
 import React from 'react';
 import styled from 'styled-components';
+import FavouriteHero from './FavouriteHero';
 
 import type { Hero } from './types';
 
@@ -9,8 +10,10 @@ const MyHeroesWrapper = styled.div`
   flex: 3;
   margin-top: 32px;
   border-left: 1px solid red;
+  flex-direction: column;
 
-  h1,h2 {
+  h1,
+  h2 {
     text-align: center;
     width: 100%;
     color: white;
@@ -23,22 +26,24 @@ const MyHeroesWrapper = styled.div`
 `;
 
 type Props = {
-  favouriteHeroes: Array<Hero>
-}
+  favouriteHeroes: Array<Hero>,
+  onDelete: number => void,
+};
 
-const MyHeroes = (props: Props) =>
+const MyHeroes = (props: Props) => (
   <MyHeroesWrapper>
     <h1>My Heroes</h1>
-    {props.favouriteHeroes.length === 0 &&
+    {props.favouriteHeroes.length === 0 && (
       <h2>You have not added any heroes</h2>
-    }
-    {
-      props.favouriteHeroes.length > 0 &&
-      props.favouriteHeroes.map(hero => <p>{hero.name}</p>)
-    }
+    )}
+    {props.favouriteHeroes.length > 0 &&
+      props.favouriteHeroes.map(hero => (
+        <FavouriteHero
+          hero={hero}
+          onDelete={props.onDelete}
+          key={hero.id} />
+      ))}
   </MyHeroesWrapper>
+);
 
-  export default MyHeroes;
-
-
-
+export default MyHeroes;

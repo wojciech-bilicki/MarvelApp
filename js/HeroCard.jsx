@@ -1,5 +1,6 @@
 // @flow
 import React from "react";
+import {Link} from 'react-router-dom';
 import styled from "styled-components";
 import type {Hero} from './types';
 
@@ -36,13 +37,13 @@ const HeroCardWrapper = styled.div`
 
 const HeroCard = ({ hero, onButtonClicked }:{hero:Hero, onButtonClicked: number => void }) => (
   <HeroCardWrapper>
-    <h3>{hero.name}</h3>
-    <img src={hero.image} alt="HeroImage" />
-    <h5>{hero.true_name}</h5>
-    <button onClick={() => onButtonClicked(hero.id)}>Add to my heroes</button>
+    <Link to={`/detail/${hero.id}`}>
+      <h3>{hero.name}</h3>
+      <img src={hero.image} alt="HeroImage" />
+      <h5>{hero.true_name}</h5>
+    </Link>
+      <button onClick={() => onButtonClicked(hero.id)}>Add to my heroes</button>
   </HeroCardWrapper>
 );
-
-
 
 export default HeroCard;

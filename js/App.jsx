@@ -41,7 +41,7 @@ const App = () => (
             />
           )}
         />
-        <Route path="/detail" component={Detail} />
+        <Route path="/detail/:heroId" component={Detail} />
       </Switch>
     </div>
   </BrowserRouter>
