@@ -10,7 +10,7 @@ test("Master renders properly", () => {
   expect(master).toMatchSnapshot();
 });
 
-test("Master render HeroCard amount based on props", () => {
+xtest("Master render HeroCard amount based on props", () => {
   const master = shallow(<Master heroes={data.heroes} />);
   expect(master.find(HeroCard).length).toEqual(data.heroes.length);
 });

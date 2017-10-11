@@ -20,7 +20,7 @@ exports[`TopBar should render properly 1`] = `
       to="/search/"
     >
       <button>
-        search
+        Poszukaj2
       </button>
     </Link>
   </styled.div>

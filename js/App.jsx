@@ -1,8 +1,11 @@
 import React from "react";
+import {Provider} from 'react-redux';
+import { createStore } from 'redux';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import styled from "styled-components";
 
 import Master from "./Master";
+import reducers from './redux/rootReducer';
 import Detail from "./Detail";
 import TopBar from "./TopBar";
 import background from "../assets/background.png";
@@ -21,8 +24,11 @@ const Background = styled.img`
   opacity: 0.5;
 `;
 
+const store = createStore(reducers);
+
 const App = () => (
   <BrowserRouter>
+    <Provider store={store}>
     <div>
       <TopBar />
       <Background src={background} />
@@ -44,6 +50,7 @@ const App = () => (
         <Route path="/detail/:heroId" component={Detail} />
       </Switch>
     </div>
+    </Provider>
   </BrowserRouter>
 );
 

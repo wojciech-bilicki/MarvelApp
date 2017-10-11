@@ -1,9 +1,11 @@
 // @flow
-import React from "react";
-import styled from "styled-components";
-import { Link } from "react-router-dom";
-import { TopBarWrapper } from "./styled";
-import logo from "../assets/Marvel-Logo.png";
+import React from 'react';
+import styled from 'styled-components';
+import {connect} from 'react-redux';
+import { Link } from 'react-router-dom';
+import { TopBarWrapper } from './styled';
+import logo from '../assets/Marvel-Logo.png';
+import {setSearchTerm} from './redux/actionCreators';
 
 const Logo = styled.img`
   width: 200px;
@@ -18,34 +20,34 @@ const SearchInputWrapper = styled.div`
   }
 `;
 
-type State = {
-  searchTerm: string
-};
+const TopBar = ({
+  searchTerm,
+  handleInputChange,
+}:{
+  searchTerm: string,
+  handleInputChange: Function,
+}) => (
+  <TopBarWrapper bgColor="#f11e22">
+    <Logo src={logo} alt="Logo" />
+    <span>Super Marvel Team</span>
+    <SearchInputWrapper>
+      <input value={searchTerm} onChange={handleInputChange} />
+      <Link to={`/search/${searchTerm}`}>
+        <button>Poszukaj2</button>
+      </Link>
+    </SearchInputWrapper>
+  </TopBarWrapper>
+);
 
-class TopBar extends React.Component<null, State>{
+const mapStateToProps = state => ({
+  searchTerm: state.searchTerm
+})
 
-  state = {
-    searchTerm: ''
+const mapDispatchToProps = dispatch => ({
+  handleInputChange: event => {
+    dispatch(setSearchTerm(event.target.value));
   }
+})
 
-  onInputChange = (event: {target: HTMLInputElement}) => {
-    this.setState({ searchTerm: event.target.value })
-  };
 
-  render() {
-    return (
-      <TopBarWrapper bgColor="#f11e22">
-        <Logo src={logo} alt="Logo" />
-        <span>Super Marvel Team</span>
-        <SearchInputWrapper>
-          <input value={this.state.searchTerm} onChange={this.onInputChange} />
-          <Link to={`/search/${this.state.searchTerm}`}>
-            <button>Poszukaj2</button>
-          </Link>
-        </SearchInputWrapper>
-      </TopBarWrapper>
-    );
-  }
-}
-
-export default TopBar;
+export default connect(mapStateToProps, mapDispatchToProps)(TopBar);
