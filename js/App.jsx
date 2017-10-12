@@ -1,6 +1,6 @@
 import React from "react";
 import {Provider} from 'react-redux';
-import { createStore } from 'redux';
+import { createStore, compose} from 'redux';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import styled from "styled-components";
 
@@ -24,7 +24,13 @@ const Background = styled.img`
   opacity: 0.5;
 `;
 
-const store = createStore(reducers);
+const store = createStore(
+  reducers,
+  compose(
+    typeof window === 'object' &&
+    typeof window.devToolsExtension !== "undefined" ? window.devToolsExtension() : f => f
+  )
+);
 
 const App = () => (
   <BrowserRouter>
